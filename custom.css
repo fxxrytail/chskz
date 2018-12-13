@@ -129,7 +129,8 @@ div.menu {display:none}
 
 #about a {
 	color: #0663a5;
-	text-decoration: underline dotted;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 #about button {
