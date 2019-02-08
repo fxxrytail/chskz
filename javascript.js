@@ -20,12 +20,14 @@ function openSurvey() {
 	btnSurveyText = document.getElementById("btnSurvey").innerHTML;
 	
 	if (btnSurveyText != "Click to hide"){
+		document.getElementById("about").style.display = "none";
 		document.getElementById("survey").style.display = "block";
 		document.getElementById("box").style.border = "2px dashed #607d8b";
 		btnSurveyText = document.getElementById("btnSurvey").innerHTML = "Click to hide";
 	}
 	
 	else {
+		document.getElementById("about").style.display = "block";
 		document.getElementById("survey").style.display = "none";
 		document.getElementById("box").style.border = "none";
 		btnSurveyText = document.getElementById("btnSurvey").innerHTML = "Click this if you're new to Stray Kids ^^";
