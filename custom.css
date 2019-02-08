@@ -94,11 +94,56 @@ div.menu {display:none}
 
 .sticky { position:sticky; top:0; }
 
+/* About Section */
+#about {
+	border: 2px dashed #607d8b;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 10px;
+}
+
+
+#about a {
+	color: #0663a5;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* New to Stray Kids*/
+#box {
+	background: none;
+	color: #000000;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#box button {
+	background-color:#010413;
+	border: none;
+	color: #d59b99;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0;
+	width:100%;
+	border-top: 1px solid #607d8b;
+}
+
+
+#box a {	color: #0663a5; font-weight: bold; text-decoration: none;}
+#box button:hover { background-color: #d59b99; color: #010413}
+#box button:active { background-color: #d59b99; color: #010413; border:2px dashed black;}
+
+/* Navigation */
 .box {
 	background: black;
-	border: 2px dashed #607d8b;
+	border: 2px dashed black;
 	color: #ffffff ;
-	margin: 5px;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 .box button {
@@ -115,41 +160,9 @@ div.menu {display:none}
 }
 
 
-.box a {text-decoration:none; color:yellow;}
+.box a {text-decoration:none; color:#ffffff;}
 .box button:hover { background-color: #d59b99; color: #010413}
 .box button:active { background-color: #d59b99; color: #010413; border:2px dashed black;}
-
-
-#about {
-	border: 2px dashed #607d8b;
-	margin: 5px;
-	padding: 10px;
-}
-
-
-#about a {
-	color: #0663a5;
-	font-weight: bold;
-	text-decoration: none;
-}
-
-#about button {
-	background-color:#ffffff;
-	font-weight: bold;
-	border: none;
-	color: #000000;
-	padding: 5px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	margin: 0;
-	width:100%;
-	border: 1px dashed #607d8b;
-}
-
-#about button:hover { background-color: #d59b99; color: #010413}
-#about button:active { background-color: #d59b99; color: #010413; border:2px dashed black;}
-
 
 /*  SECTIONS  */
 .section {
@@ -184,4 +197,3 @@ div.menu {display:none}
 	.sticky {position:static;}
 	span.menu {display:none;}
 	div.menu {display:block;}
-}

@@ -19,13 +19,15 @@ function topFunction() {
 function openSurvey() {
 	btnSurveyText = document.getElementById("btnSurvey").innerHTML;
 	
-	if (btnSurveyText != "CLOSE"){
+	if (btnSurveyText != "Click to hide"){
 		document.getElementById("survey").style.display = "block";
-		btnSurveyText = document.getElementById("btnSurvey").innerHTML = "CLOSE";
+		document.getElementById("box").style.border = "2px dashed #607d8b";
+		btnSurveyText = document.getElementById("btnSurvey").innerHTML = "Click to hide";
 	}
 	
 	else {
 		document.getElementById("survey").style.display = "none";
-		btnSurveyText = document.getElementById("btnSurvey").innerHTML = "PLEASE CLICK THIS TO ANWER MY SURVEY";
+		document.getElementById("box").style.border = "none";
+		btnSurveyText = document.getElementById("btnSurvey").innerHTML = "Click this if you're new to Stray Kids ^^";
 	}
 }
