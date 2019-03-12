@@ -1,6 +1,6 @@
 body {
 	margin:0; 
-	background-color: #010413;
+	background-color: #000000;
 	color:black; 
 	font-family:Arial; 
 	font-size: 13px;
@@ -31,8 +31,8 @@ div.menu {display:none}
   padding: 10px;
   border-radius: 4px;
 }
-#btnTop:hover {background-color: #010413 ; color:#d59b99;}
-#btnTop:active {background-color: #d59b99; color:#010413 ; border:none}
+#btnTop:hover {background-color: #000000 ; color:#e8382a;}
+#btnTop:active {background-color: #ffffff; color:#e8382a ; border:none}
 
 .btn-container {
 	max-width:800px;
@@ -40,7 +40,7 @@ div.menu {display:none}
 }
 
 .btn-container button {
-	background-color:#010413;
+	background-color:#000000;
 	border: none;
 	color: #ffffff;
 	padding: 10px;
@@ -51,15 +51,15 @@ div.menu {display:none}
 }
 
 .btn-container a {text-decoration:none; color:#ffffff;}
-.btn-container button:hover {background-color: #d59b99; color: black}}
-.btn-container button:active {background-color: white; color: black;}
+.btn-container button:hover {background-color: #000000; color: #e8382a}
+.btn-container button:active {background-color: #ffffff; color: #e8382a; font-weight:bold;}
 
 #highlight {background-color: white; color: black; font-weight:bold;}
 
 
 .secTitle {
-	background-color:#010413;
-	color:#d59b99;
+	background-color:#000000;
+	color:#ffffff;
 	text-align:center;
 	padding: 5px;
 }
@@ -67,18 +67,18 @@ div.menu {display:none}
 
 #allLinks {
 	text-align:left;
-	border: 2px dashed #607d8b;
+	border: 2px solid #607d8b;
 	margin: 5px;
 	padding: 10px;
 }
-#allLinks a { text-decoration:none; color:#0663a5; font-weight:bold;}
+#allLinks a { text-decoration:none; color:#e8382a; font-weight:bold;}
 #allLinks a:hover { text-decoration: underline; }
 
 
 #tag a { text-decoration:none; color:black; font-weight:normal;}
 #tag a:hover { text-decoration: underline; }
 
-#nosubs { color:#f44336; font-size:9px; font-weight: bold;}
+#nosubs { color:#0663a5; font-size:9px; font-weight: bold;}
 #subs, #subs a{ font-size:9px; font-weight: bold;}
 
 
@@ -96,7 +96,7 @@ div.menu {display:none}
 
 /* About Section */
 #about {
-	border: 2px dashed #607d8b;
+	border: 2px solid #607d8b;
 	margin-top: 5px;
 	margin-left: 5px;
 	margin-right: 5px;
@@ -105,7 +105,7 @@ div.menu {display:none}
 
 
 #about a {
-	color: #0663a5;
+	color: #e8382a;
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -119,9 +119,9 @@ div.menu {display:none}
 }
 
 #box button {
-	background-color:#010413;
+	background-color:#000000;
+	color: #e2d730;
 	border: none;
-	color: #d59b99;
 	padding: 5px;
 	text-align: center;
 	text-decoration: none;
@@ -132,24 +132,25 @@ div.menu {display:none}
 }
 
 
-#box a {	color: #0663a5; font-weight: bold; text-decoration: none;}
-#box button:hover { background-color: #d59b99; color: #010413}
-#box button:active { background-color: #d59b99; color: #010413; border:2px dashed black;}
+#box a {	color: #e8382a; font-weight: bold; text-decoration: none;}
+#box button:hover { background-color: #000000; color: #e8382a}
+#box button:active { background-color: #ffffff; color: #e8382a; border:2px solid black; font-weight:bold;}
 
 /* Navigation */
 .box {
-	background: black;
+	background: #000000;
 	border: 2px dashed black;
-	color: #ffffff ;
+	color: #e2d730;
+	font-weight:bold;
 	margin-top: 5px;
 	margin-left: 5px;
 	margin-right: 5px;
 }
 
 .box button {
-	background-color:#010413;
+	background-color:#000000;
+	color: #ffffff;
 	border: none;
-	color: #d59b99;
 	padding: 5px;
 	text-align: center;
 	text-decoration: none;
@@ -161,8 +162,8 @@ div.menu {display:none}
 
 
 .box a {text-decoration:none; color:#ffffff;}
-.box button:hover { background-color: #d59b99; color: #010413}
-.box button:active { background-color: #d59b99; color: #010413; border:2px dashed black;}
+.box button:hover { background-color: #000000; color: #e8382a}
+.box button:active { background-color: #ffffff; color: #e8382a; border:2px solid black; font-weight:bold;}
 
 /*  SECTIONS  */
 .section {
