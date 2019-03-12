@@ -22,7 +22,7 @@ function openSurvey() {
 	if (btnSurveyText != "Click to hide"){
 		document.getElementById("about").style.display = "none";
 		document.getElementById("survey").style.display = "block";
-		document.getElementById("box").style.border = "2px dashed #607d8b";
+		document.getElementById("box").style.border = "2px solid #607d8b";
 		btnSurveyText = document.getElementById("btnSurvey").innerHTML = "Click to hide";
 	}
 	
