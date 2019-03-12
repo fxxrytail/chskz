@@ -71,7 +71,7 @@ div.menu {display:none}
 	margin: 5px;
 	padding: 10px;
 }
-#allLinks a { text-decoration:none; color:#ce0f00; font-weight:bold;}
+#allLinks a { text-decoration:none; color:#f44336; font-weight:bold;}
 #allLinks a:hover { text-decoration: underline; }
 
 
