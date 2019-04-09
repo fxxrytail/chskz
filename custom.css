@@ -11,6 +11,8 @@ h5 { text-align:center; }
 
 div.menu {display:none}
 
+#wait {color:gray;}
+
 #header { margin:0 auto; max-width:800px; }
 
 #header img { width: 100%; }
