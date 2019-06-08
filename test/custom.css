@@ -135,9 +135,9 @@ div.menu {display:none}
 
 /* Navigation */
 .box {
-	background: #000000;
-	border: 2px dashed black;
-	color: #e2d730;
+	color: #f6d106;
+	background: #0e0e0c;
+	border: 2px solid #797039;
 	font-weight:bold;
 	margin-top: 5px;
 	margin-left: 5px;
@@ -145,22 +145,23 @@ div.menu {display:none}
 }
 
 .box button {
-	background-color:#000000;
-	color: #ffffff;
 	border: none;
+	color: #ffffff;
+	background-color:#0e0e0c;
+	border-top: 1px solid #797039;
 	padding: 5px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	margin: 0;
 	width:100%;
-	border-top: 1px solid #797039;
+	
 }
 
 
-.box a {text-decoration:none; color:#ffffff;}
-.box button:hover { background-color: #000000; color: #e8382a}
-.box button:active { background-color: #ffffff; color: #e8382a; border:2px solid black; font-weight:bold;}
+.box a {text-decoration:none}
+.box button:hover { color: #f6d106; background-color: #aba476}
+.box button:active { color: #000000; background-color: #ffd700; font-weight:bold;}
 
 /*  SECTIONS  */
 .section {
