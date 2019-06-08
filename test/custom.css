@@ -1,0 +1,198 @@
+body {
+	color:#ffffff; 
+	background-color: #0e0e0c;
+	margin:0; 
+	font-family:Arial; 
+	font-size: 13px;
+	text-align:center; 
+}
+
+a {color:#f6d106; 
+	text-decoration:none; 
+	font-weight:none;
+ }
+a:hover {text-decoration: underline; }
+
+h5 { text-align:center; }
+
+div.menu {display:none}
+
+#wait {color:#808080;}
+
+#header { margin:0 auto; max-width:800px; }
+#header img { width: 100%; }
+
+.secTitle {
+	color:#000000;
+	background-color:#ffd700;
+	font-weight:bold;
+	text-align:center;
+	padding: 5px;
+}
+.small {font-size:9px;}
+
+#tag a {color:#ffffff; text-decoration:none; font-weight:normal;}
+#tag a:hover { text-decoration: underline; }
+
+#nosubs {color:#ffe2a0; font-size:9px; font-weight: bold;}
+#subs, #subs a{ font-size:9px; font-weight: bold;}
+
+#main { background-color:#aba476; margin:0 auto; max-width:800px; }
+
+#btnTop {
+  color: #ffffff;
+  background-color: #aba476a3;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: 2px solid #797039;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+#btnTop:hover {color:#f6d106; background-color: #0e0e0c}
+#btnTop:active {color:#000000;background-color: #ffd700; border:none}
+
+.btn-container {
+	max-width:800px;
+	margin: 0 auto;
+}
+
+.btn-container button {
+	color: #ffffff;
+	background-color:#00000000;
+	border: none;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0;
+}
+
+.btn-container a {text-decoration:none;}
+.btn-container button:hover {color: #f6d106; background-color: #00000000;}
+.btn-container button:active {color: #000000; background-color: #aba476; font-weight:bold;}
+
+#highlight {color:#000000; background-color:#aba476; font-weight:bold;}
+
+
+#allLinks {
+	background-color:#0e0e0c; /*delete after changing to class*/
+	text-align:left;
+	border: 2px solid #797039;
+	margin: 5px;
+	padding: 10px;
+}
+/*#allLinks a { text-decoration:none; color:#b71c1c; font-weight:bold;}
+#allLinks a:hover { text-decoration: underline; }*/
+
+
+.sticky { position:sticky; top:0; }
+
+/* About Section */
+#about {
+	background-color:#0e0e0c;
+	border: 2px solid #797039;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 10px;
+}
+
+
+/*#about a {
+	color: #e8382a;
+	font-weight: bold;
+	text-decoration: none;
+} */
+
+/* New to Stray Kids*/
+#box {
+	background-color: #000000;
+	/*color: #000000;*/
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#box button {
+	color:#000000;
+	background-color:#ffd700;
+	border: none;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0;
+	width:100%;
+	border-top: 1px solid #797039;
+}
+
+#box button:hover {color: #ffe2a0; background-color: #0e0e0c}
+#box button:active {color: #f6d106; background-color: #0e0e0c; font-weight:bold}
+
+/* Navigation */
+.box {
+	background: #000000;
+	border: 2px dashed black;
+	color: #e2d730;
+	font-weight:bold;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.box button {
+	background-color:#000000;
+	color: #ffffff;
+	border: none;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0;
+	width:100%;
+	border-top: 1px solid #797039;
+}
+
+
+.box a {text-decoration:none; color:#ffffff;}
+.box button:hover { background-color: #000000; color: #e8382a}
+.box button:active { background-color: #ffffff; color: #e8382a; border:2px solid black; font-weight:bold;}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.33%; }
+.span_1_of_3 { width: 32.66%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+	.sticky {position:static;}
+	span.menu {display:none;}
+	div.menu {display:block;}
+
