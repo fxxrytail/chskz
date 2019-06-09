@@ -34,7 +34,7 @@ div.menu {display:none}
 #tag a {color:#ffffff; text-decoration:none; font-weight:normal;}
 #tag a:hover { text-decoration: underline; }
 
-#nosubs {color:#ffe2a0; font-size:9px; font-weight: bold;}
+#nosubs {color:#d26b02; font-size:9px; font-weight: bold;}
 #subs, #subs a{ font-size:9px; font-weight: bold;}
 
 #main { background-color:#aba476; margin:0 auto; max-width:800px; }
@@ -130,7 +130,7 @@ div.menu {display:none}
 	border-top: 1px solid #797039;
 }
 
-#box button:hover {color: #ffe2a0; background-color: #0e0e0c}
+#box button:hover {color: #d26b02; background-color: #0e0e0c}
 #box button:active {color: #f6d106; background-color: #0e0e0c; font-weight:bold}
 
 /* Navigation */
