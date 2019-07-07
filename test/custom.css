@@ -1,4 +1,7 @@
-body {
+/* NEW */
+
+/* General */
+ body {
 	color:#ffffff; 
 	background-color: #0e0e0c;
 	margin:0; 
@@ -6,6 +9,9 @@ body {
 	font-size: 13px;
 	text-align:center; 
 }
+
+.header { margin:0 auto; max-width:800px; }
+.header img { width: 100%; }
 
 a {color:#f6d106; 
 	text-decoration:none; 
@@ -15,29 +21,15 @@ a:hover {text-decoration: underline; }
 
 h5 { text-align:center; }
 
-div.menu {display:none}
-
-#wait {color:#808080;}
-
-#header { margin:0 auto; max-width:800px; }
-#header img { width: 100%; }
-
-.secTitle {
-	color:#000000;
-	background-color:#ffd700;
-	font-weight:bold;
-	text-align:center;
-	padding: 5px;
-}
-.small {font-size:9px;}
-
 #tag a {color:#ffffff; text-decoration:none; font-weight:normal;}
 #tag a:hover { text-decoration: underline; }
 
-#nosubs {color:#ffe2a0; font-size:9px; font-weight: bold;}
+#nosubs {color:#d26b02; font-size:9px; font-weight: bold;}
 #subs, #subs a{ font-size:9px; font-weight: bold;}
 
-#main { background-color:#aba476; margin:0 auto; max-width:800px; }
+#wait {color:#808080;}
+
+.sticky { position:sticky; top:0; }
 
 #btnTop {
   color: #ffffff;
@@ -56,6 +48,7 @@ div.menu {display:none}
 #btnTop:hover {color:#f6d106; background-color: #0e0e0c}
 #btnTop:active {color:#000000;background-color: #ffd700; border:none}
 
+/* Page Button */
 .btn-container {
 	max-width:800px;
 	margin: 0 auto;
@@ -77,74 +70,91 @@ div.menu {display:none}
 .btn-container button:active {color: #000000; background-color: #aba476; font-weight:bold;}
 
 #highlight {color:#000000; background-color:#aba476; font-weight:bold;}
+div.menu {display:none}
 
+/* Main Body */
+.main { background-color:#aba476; margin:0 auto; max-width:800px; }
 
-#allLinks {
-	background-color:#0e0e0c; /*delete after changing to class*/
-	text-align:left;
-	border: 2px solid #797039;
-	margin: 5px;
-	padding: 10px;
-}
-/*#allLinks a { text-decoration:none; color:#b71c1c; font-weight:bold;}
-#allLinks a:hover { text-decoration: underline; }*/
-
-
-.sticky { position:sticky; top:0; }
-
-/* About Section */
-#about {
+/* Box*/
+.box {
 	background-color:#0e0e0c;
 	border: 2px solid #797039;
-	margin-top: 5px;
-	margin-left: 5px;
-	margin-right: 5px;
-	padding: 10px;
+	margin: 0 5px 5px 5px;
 }
+.bigBox {text-align:left; padding: 10px}
+.smallBox{padding:0 10px}
 
-
-/*#about a {
-	color: #e8382a;
-	font-weight: bold;
-	text-decoration: none;
-} */
-
-/* New to Stray Kids*/
-#box {
-	background-color: #000000;
-	/*color: #000000;*/
-	margin-left: 5px;
-	margin-right: 5px;
-}
-
-#box button {
+.secTitle {
 	color:#000000;
 	background-color:#ffd700;
-	border: none;
+	font-weight:bold;
+	text-align:center;
+	padding: 5px;
+}
+.small {font-size:9px;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* New to SKZ */
+#open {margin-left: 5px; margin-right: 5px}
+#open button {
+	color:#000000;
+	background-color:#ffd700;
+	border: 2px solid #797039;
+	border-bottom:none;
 	padding: 5px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	margin: 0;
 	width:100%;
-	border-top: 1px solid #797039;
+}
+#open button:hover {color: #d26b02; background-color: #0e0e0c}
+#open button:active {color: #f6d106; background-color: #0e0e0c; font-weight:bold}
+
+.modalBox {
+  margin: auto;
+  padding: 20px;
+  width: 480px;
 }
 
-#box button:hover {color: #ffe2a0; background-color: #0e0e0c}
-#box button:active {color: #f6d106; background-color: #0e0e0c; font-weight:bold}
+.close {
+  color: #ffd700;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #d26b02;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 
 /* Navigation */
-.box {
+#nav {
 	color: #f6d106;
-	background: #0e0e0c;
-	border: 2px solid #797039;
 	font-weight:bold;
-	margin-top: 5px;
-	margin-left: 5px;
-	margin-right: 5px;
+	padding:0;
 }
 
-.box button {
+#nav button{
 	border: none;
 	color: #ffffff;
 	background-color:#0e0e0c;
@@ -155,13 +165,25 @@ div.menu {display:none}
 	display: inline-block;
 	margin: 0;
 	width:100%;
-	
 }
 
 
-.box a {text-decoration:none}
-.box button:hover { color: #f6d106; background-color: #aba476}
-.box button:active { color: #000000; background-color: #ffd700; font-weight:bold;}
+#nav a {text-decoration:none}
+#nav button:hover { color: #f6d106; background-color: #aba476}
+#nav button:active { color: #000000; background-color: #ffd700; font-weight:bold;}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  SECTIONS  */
 .section {
@@ -196,4 +218,4 @@ div.menu {display:none}
 	.sticky {position:static;}
 	span.menu {display:none;}
 	div.menu {display:block;}
-
+	.modalBox{width:80%;}

@@ -16,9 +16,41 @@
 
 
 <body>
+<!-- New to SKZ -->
+<div id="new2skz" class="modal">
+  <div class="box modalBox">
+    <span onclick="closeModal()" class="close">&times;</span>
+		<p> WELCOME! </p>
+		<video width="100%" controls>
+				<source src="img/welcome.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+			
+		<p><a href="https://skzguide.carrd.co" target="_blank">Guide to Stray Kids </a> by <a>StaySwair</a> </p>
+			
+		<p> Stray Kids Official Sites
+		<br><a href="http://straykids.jype.com/"><img src="img/website.png"/></a>  
+			<a href="https://fans.jype.com/Portal" target="_blank"><img src="img/fans.png"/></a>  
+			<a href="https://www.youtube.com/c/StrayKids" target="_blank"><img src="img/youtube.png"/></a>  
+			<a href="https://twitter.com/Stray_Kids" target="_blank"><img src="img/twitter.png"/></a>  
+			<a href="https://www.facebook.com/JYPEStrayKids/" target="_blank"><img src="img/facebook.png"/></a>  
+		<a href="https://www.instagram.com/realstraykids/" target="_blank"><img src="img/instagram.png"/></a>  
+		</p>
+		<p> 3RACHA Official Sites 
+		<br><a href="https://soundcloud.com/3racha" target="_blank"><img src="img/soundcloud.png"/></a> 
+			<a href="https://www.youtube.com/channel/UCIM6nufSHfOY0POkLofL2rQ" target="_blank"><img src="img/youtube.png"/></a> 			
+			<a href="https://www.instagram.com/3racha/" target="_blank"><img src="img/instagram.png"/></a>  
+		</p>
+			
+				* * *
+		If you don't know where to start I want to recommend their MVs, Performances, and their album INTROs in which they introduce the songs from their album and talks about how they made it. For shows, I recommend you to watch their Survival Show, The 9th and Two Kids Room first ^^
+  </div>
+</div>
+
+
 <!-- HEADER -->
 	<div>
-	  <div id="header">
+	  <div class="header">
 		<img src="banner.jpg"/>
 	  </div>
 	  <div class="btn-container">
@@ -42,45 +74,17 @@
 <!-- END OF HEADER -->
 <!-- ***EVERYTHING ABOVE MUST BE IN EVERY PAGE***-->
   
-  <div id="main">
+  <div class="main">
     <div class="section group">
 	<div class="sticky col span_1_of_3">
-<!-- NEW TO SKZ -->
-	<div id="box">
-		<button onclick="openSurvey()" id="btnSurvey"> Click this if you're new to Stray Kids ^^ </button>
-	
-		<div id="survey" style="display:none; padding-left: 5px; padding-right: 5px;">
-			<p> WELCOME! </p>
-			<video width="100%" controls>
-				<source src="img/welcome.mp4" type="video/mp4">
-			Your browser does not support the video tag.
-			</video>
-			
-			<p><a href="https://skzguide.carrd.co" target="_blank">Guide to Stray Kids </a> by <a>StaySwair</a> </p>
-			
-			<p> Stray Kids Official Sites
-			<br><a href="http://straykids.jype.com/"><img src="img/website.png"/></a>  
-				<a href="https://fans.jype.com/Portal" target="_blank"><img src="img/fans.png"/></a>  
-				<a href="https://www.youtube.com/c/StrayKids" target="_blank"><img src="img/youtube.png"/></a>  
-				<a href="https://twitter.com/Stray_Kids" target="_blank"><img src="img/twitter.png"/></a>  
-				<a href="https://www.facebook.com/JYPEStrayKids/" target="_blank"><img src="img/facebook.png"/></a>  
-				<a href="https://www.instagram.com/realstraykids/" target="_blank"><img src="img/instagram.png"/></a>  
-			</p>
-			<p> 3RACHA Official Sites 
-			<br><a href="https://soundcloud.com/3racha" target="_blank"><img src="img/soundcloud.png"/></a> 
-				<a href="https://www.youtube.com/channel/UCIM6nufSHfOY0POkLofL2rQ" target="_blank"><img src="img/youtube.png"/></a> 			
-				<a href="https://www.instagram.com/3racha/" target="_blank"><img src="img/instagram.png"/></a>  
-			</p>
-			
-				* * *
-			<h5>If you don't know where to start I want to recommend their MVs, Performances, and their album INTROs in which they introduce the songs from their album and talks about how they made it. For shows, I recommend you to watch their Survival Show, The 9th and Two Kids Room first ^^ </h5>
-		</div>
+<!-- New to SKZ -->
+	<div id="open">
+		<button onclick="openModal()" id="myBtn">Click this if you're new to Stray Kids ^^</button>
 	</div>
-		
-<!-- END OF NEW TO SKZ -->
-		
+	
+	
 <!-- Navigation -->
-	  <div class="box">
+	  <div class="box" id="nav">
 		<p>Navigation</p>
 		<a href="index.html#2019"><button>2019</button></a>
 		<a href="index.html#2018"><button>2018</button></a>
@@ -89,7 +93,7 @@
 <!-- End of Navigation -->	
 
 <!-- ABOUT SECTION HERE -->	
-	  <div id="about" style="display:block">
+	  <div class="box smallBox" id="about" style="display:block">
 		  <p>CHANNEL SKZ is a fanmade site for compilation of links of Stray Kids' videos, performances, shows, and guestings mostly from their official sites. 
 		  Please take note that I may not be able to put all the links here. Thank you and have fun watching Stray Kids! (≧▽≦)</p>		  
 		  <p>
@@ -98,24 +102,22 @@
 		  <p>EST.: 180821</p>
 		  <p>------</p>
 		  <p>Click to go to:
-		  <span id="tag">[TAG]</span> <span style="font-weight:bold; text-decoration:none"><a>Video Link</a></span></p>
+		  <span id="tag"><a>[TAG]</a></span> <a>Video Link</a></p>
 		  <p id="wait">Gray means still waiting for link/reupload </p>
 		
-		<!--counter-->
-			<div align=center style="display:none"><img src='https://www.counter12.com/img-Bzy1x6zaxBdcwxZx-15.gif' border='0' alt='conter12'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=Bzy1x6zaxBdcwxZx'></script></div>
+		<!--counter
+			<div align=center style="display:none"><img src='https://www.counter12.com/img-Bzy1x6zaxBdcwxZx-15.gif' border='0' alt='conter12'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=Bzy1x6zaxBdcwxZx'></script></div>-->
 		</div>
 <!-- END OF ABOUT -->
 	</div>
 
 <!-- HOME LINKS SECTION HERE -->
 	<div class="col span_2_of_3">
-	  <div id="allLinks">
-	  <div class="secTitle small">Last update: Jun 09, 2019 at 2AM KST</div>
+	  <div class="box bigBox" id="allLinks">
+	    <div class="secTitle small">Last update: Jul 07, 2019 at 2AM KST</div>
 
 <!-- UPCOMING 	  	
 	<p> DATE <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="VLink" target="_blank"> TITLE </a> <span id="nosubs">[no subs]</span> </p>
-	
-	<p> DATE <span id="tag"><a href="skblack.html#2018">[Spot Kids: BLACK]</a></span> <a href="LINK" target="_blank"> TITLE </a> <span id="nosubs">[no subs]</span> <span id="subs">title trans cr: _____ </span> </p>
 	
 	<p> DATE <span id="tag"><a href="shows.html#SKZ-TALKER">[SKZ-TALKER]</a></span> TITLE <a href="VLink" target="_blank"> V LIVE</a> <span id="nosubs">[no subs]</span> | <a href="YTLink" target="_blank"> YouTube </a> <span id="nosubs">[no subs]</span> </p>
 	
@@ -125,22 +127,109 @@
 	
 	<p> DATE <span id="tag"><a href="straykids.html#Yellow-Wood">[Yellow Wood]</a></span> <a href="LINK" target="_blank"> TITLE </a> <span id="nosubs">[no subs]</span> </p>
 	
-	<p> DATE <span id="tag"><a href="shows.html#FINDING-SKZ">[Finding Stray Kids]</a></span> <a href="LINK" target="_blank"> TITLE </a> <span id="nosubs">[no subs]</span> </p>
+	<p> DATE <span id="tag"><a href="shows.html#CHOISKZ">[CHOISKZ]</a></span> TITLE <a href="VLink" target="_blank"> V LIVE</a> <span id="nosubs">[no subs]</span> | <a href="YTLink" target="_blank"> YouTube </a> <span id="nosubs">[no subs]</span> </p>
 	
 	<p> DATE <span id="tag"><a href="shows.html#More">[More]</a></span> <a href="LINK" target="_blank"> TITLE </a> <span id="nosubs">[no subs]</span> </p>
 	
+	<p> DATE <span id="tag"> <a href="shows.html#PopsInSeoul">[Pops In Seoul]</a></span> <a href="LINK" target="_blank"> TITLE </a> </p>
+	
 	<p> DATE <span id="tag"><a href="TAGLINK">[TAG]</a></span> <a href="LINK" target="_blank"> TITLE </a> <span id="nosubs">[no subs]</span> </p>
 	
-	<p id="wait">DATE TITLE</p>
+	<p id="wait">DATE [TAG] TITLE</p>
 -->	
 	<h5 id="2019">Latest Contents</h5>
 	
-	<p> Jun 08: <span id="tag"><a href="shows.html#Interview">[Interview]</a></span> <a href="https://www.etonline.com/live/20190607172731-stray-questions-with-stray-kids" target="_blank"> ET Live </a> |  <a href="https://twitter.com/etnow/status/1137101929056747520" target="_blank"> Twitter link  </a> </p>
+		<p> Jul 06: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/138554" target="_blank"> Chan's Room EP27: Special Guest (Seungmin) </a> <span id="nosubs">[no subs]</span> </p>
+	
+		<p> Jul 06: <span id="tag"><a href="shows.html#TWO-KIDS-ROOM">[TWO KIDS ROOM]</a></span> EP06 Woojin x Felix <a href="https://www.vlive.tv/video/138537" target="_blank"> V LIVE</a> <span id="nosubs">[no subs]</span> | <a href="https://youtu.be/LPS5GoBgQq8" target="_blank"> YouTube </a> <span id="nosubs">[no subs]</span> </p>
+	
+		<p> Jul 06: <span id="tag"><a href="shows.html#TWO-KIDS-ROOM">[TWO KIDS ROOM]</a></span> EP05 Bang Chan x HAN <a href="https://www.vlive.tv/video/138536" target="_blank"> V LIVE</a> <span id="nosubs">[no subs]</span> | <a href="https://youtu.be/uL47tVkagHg" target="_blank"> YouTube </a> <span id="nosubs">[no subs]</span> </p>
+	
+	<p> Jul 05: <span id="tag"> <a href="shows.html#PopsInSeoul">[Pops In Seoul]</a></span> <a href="https://youtu.be/SmFWQl1n1V8" target="_blank"> What is Felix's TMI? </a> </p>
+	<p> Jul 05: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/138458" target="_blank"> Making Perfume for STAY </a> </p>
+	
+		<p> Jul 05: <span id="tag"><a href="shows.html#CHOISKZ">[CHOISKZ]</a></span> Episode 2 <a href="https://www.vlive.tv/video/138437" target="_blank"> V LIVE</a> | <a href="https://youtu.be/rA1WcOQrGXY" target="_blank"> YouTube </a> <span id="nosubs">[no subs]</span> </p>
+	
+	<p> Jul 04: <span id="tag"> <a href="straykids.html#Dance-Practice">[Dance Practice]</a></span>  <a href="https://youtu.be/49yISZz79bI" target="_blank"> Side Effects (9 ver.) </a> </p>
+	
+	<p> Jul 04: <span id="tag"> <a href="shows.html#PopsInSeoul">[Pops In Seoul]</a></span> <a href="https://youtu.be/xe98SsxmIgs" target="_blank"> The Mission for Felix to Make the Viewers Fall in Love with Him! </a> </p>
+	
+	<p> Jul 03: <span id="tag"><a href="straykids.html#SKZ-PLAYER">[SKZ-PLAYER]</a></span> <a href="https://youtu.be/jRL9J-S78yE" target="_blank"> Lee Know  "Dawn" </a> </p>
+	
+		<p> Jul 02: <span id="tag"><a href="shows.html#SKZ-TALKER">[SKZ-TALKER]</a></span> Episode 17 <a href="https://www.vlive.tv/video/137829" target="_blank"> V LIVE</a> | <a href="https://youtu.be/dKhYUJ2vTEw" target="_blank"> YouTube </a> <span id="nosubs">[no subs]</span> </p>
+	
+	<p> Jul 02: <span id="tag"><a href="shows.html#PopsInSeoul">[Pops In Seoul]</a></span> <a href="https://youtu.be/QNPnRUzqPFE" target="_blank"> Felix's Dance How To! Stray Kids Side Effects </a> </p>
+	
+	<p> Jul 01: <span id="tag"><a href="straykids.html#MVs">[M/V]</a></span> <a href="https://youtu.be/4Xv5HJo5AFw" target="_blank"> "TMT" Video </a> </p>
+	
+<br><p> Jun 30: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/137328" target="_blank"> Chan's Room EP26 </a> </p>
+	<p> Jun 30: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/137306" target="_blank"> [Sunday Kids] Han River Outing </a> </p>
+	<p> Jun 30: <span id="tag"><a href="shows.html#More">[More]</a></span>  <a href="https://youtu.be/11eDNf3IV2U" target="_blank"> Stray Kids Inkigayo Check-in Live EP.1 </a> | <a href="https://youtu.be/-XKrGIpv9BE" target="_blank"> EP.2 </a> </p>
+	<p> Jun 29: <span id="tag"><a href="straykids.html#Yellow-Wood">[Yellow Wood]</a></span> <a href="https://youtu.be/MM8_M6BhQsk" target="_blank"> M2 BE ORIGINAL: Stray Kids - Side Effects </a> </p>
+	
+		<p> Jun 29: <span id="tag"><a href="shows.html#TWO-KIDS-ROOM">[TWO KIDS ROOM]</a></span> EP04 Lee Know x Hyunjin <a href="https://www.vlive.tv/video/137264" target="_blank"> V LIVE</a> | <a href="https://youtu.be/xuoJcpGvzrs" target="_blank"> YouTube </a> <span id="nosubs">[no subs]</span> </p>
+		
+		<p> Jun 29: <span id="tag"><a href="shows.html#TWO-KIDS-ROOM">[TWO KIDS ROOM]</a></span> EP03 Woojin x Changbin <a href="https://www.vlive.tv/video/137262" target="_blank"> V LIVE</a> | <a href="https://youtu.be/TxXmlBkEKkw" target="_blank"> YouTube </a> <span id="nosubs">[no subs]</span> </p>
+	
+	<p> Jun 28: <span id="tag"><a href="shows.html#More">[More]</a></span> <a href="https://youtu.be/8ZjmwRE0T5E" target="_blank"> After Mom Falls Asleep (Lee Know, Hyunjin, I.N) </a> </p>
+			
+		<p> Jun 28: <span id="tag"><a href="shows.html#More">[More]</a></span> <a href="https://www.vlive.tv/video/137055" target="_blank"> Episode 269 (Hyunjin) </a> <span id="nosubs">[no subs]</span> </p>
+	
+		<p> Jun 28: <span id="tag"><a href="shows.html#CHOISKZ">[CHOISKZ]</a></span> Episode 1 <a href="https://www.vlive.tv/video/137183" target="_blank"> V LIVE</a> | <a href="https://youtu.be/IEN8KgAIVVg" target="_blank"> YouTube </a> <span id="nosubs">[no subs]</span> </p>
+	
+	<p> Jun 28: <span id="tag"><a href="straykids.html#Live-Perf">[Live Perf] </a></span> <a href="https://youtu.be/JDdYtUQwWlE" target="_blank"> Music Bank: TWICE - Fancy (cover) </a> </p>
+	<p> Jun 27: <span id="tag"><a href="straykids.html#Yellow-Wood">[Yellow Wood]</a></span> <a href="https://youtu.be/9hLgp0gyPNA" target="_blank"> BEHIND THE SCENE - Stray Kids  </a> <span id="subs">subs by: StrayKSubs</span>  </p>
+		
+		<p> Jun 26: <span id="tag"><a href="shows.html#More">[More]</a></span> <a href="https://youtu.be/CZhFyIDgH7I" target="_blank"> MBC Dreaming Radio </a> <span id="nosubs">[no subs]</span> </p>
+	
+	<p> Jun 26: <span id="tag"><a href="shows.html#More">[More]</a></span> <a href="https://youtu.be/IrHJR9VQYRc" target="_blank"> "Insane Quiz Show" Teaser (Hyunjin and HAN) </a> </p>
+	
+	<p> Jun 26: <span id="tag"><a href="straykids.html#Yellow-Wood">[Yellow Wood]</a></span> <a href="https://youtu.be/JGPlEpvkd50" target="_blank"> "Side Effects" M/V Making Film  </a> </p>
+	<p> Jun 25: <span id="tag"><a href="shows.html#SKZ-TALKER">[SKZ-TALKER]</a></span> Episode 16 <a href="https://www.vlive.tv/video/136415" target="_blank"> V LIVE</a> | <a href="https://youtu.be/p78YlqhiWWU" target="_blank"> YouTube </a></p>
+	<p> Jun 24: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/136169" target="_blank"> Maknae's Private Life 13 (feat. Woojin) </a></p>
+	<p> Jun 24: <span id="tag"><a href="straykids.html#MVs">[M/V]</a></span> <a href="https://youtu.be/qJXCbv9xscI" target="_blank"> "Side Effects" Performance Video </a> </p>
+	<p> Jun 23: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/136037" target="_blank"> [Sunday Kids] Jump rope in the moonlight </a> </p>
+	<p> Jun 22: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/135969" target="_blank"> Chan's Room EP25 </a> </p>
+	<p> Jun 22: <span id="tag"><a href="shows.html#TWO-KIDS-ROOM">[TWO KIDS ROOM]</a></span> EP02 Felix x Seungmin <a href="https://www.vlive.tv/video/135965" target="_blank"> V LIVE</a> | <a href="https://youtu.be/QbST3NEem-E" target="_blank"> YouTube </a></p>
+	<p> Jun 22: <span id="tag"><a href="shows.html#TWO-KIDS-ROOM">[TWO KIDS ROOM]</a></span> EP01 HAN x I.N <a href="https://www.vlive.tv/video/135964" target="_blank"> V LIVE</a> | <a href="https://youtu.be/lQcM-Xh0210" target="_blank"> YouTube </a> </p>
+	<p> Jun 22: <span id="tag"><a href="shows.html#Interview">[Interview]</a></span> <a href="https://youtu.be/BPd1VhoQsBk" target="_blank"> BuzzFeed </a> </p>
+	<p> Jun 21: <span id="tag"><a href="shows.html#CHOISKZ">[CHOISKZ]</a></span> Teaser <a href="https://www.vlive.tv/video/135864" target="_blank"> V LIVE</a> | <a href="https://youtu.be/CrBZDWqlNMo" target="_blank"> YouTube </a></p>
+	<p> <span id="tag"><a href="straykids.html#Live-Perf">[Live Perf] </a></span> <a href="https://www.youtube.com/playlist?list=PL45hWqrY6jaG3t2P4VLEwNzNbEJpR8EDQ" target="_blank"> Clé 2 : Yellow Wood Live Stage Performances </a> <span id="subs">playlist by: StrayKSubs</span> </p>
+	<p> Jun 20: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/135610" target="_blank"> Hyunjin </a> </p>
+	<p> Jun 20: <span id="tag"><a href="shows.html#More">[IDOL RADIO]</a></span> <a href="https://www.vlive.tv/video/134199" target="_blank"> Episode 261 with Stray Kids </a></p>
+	<p> Jun 20: <span id="tag"><a href="straykids.html#Fan-Guide">[Fan Featuring]</a></span> <a href="https://youtu.be/br_20emSsgs" target="_blank"> Side Effects </a> </p>
+	<p> Jun 19: <span id="tag"><a href="shows.html#More">[More]</a></span> <a href="https://www.vlive.tv/video/134760" target="_blank"> Stray Kids x CouchTalk </a> </p>	
+	<p> Jun 19: <span id="tag"><a href="straykids.html#MVs">[M/V]</a></span> <a href="https://youtu.be/5rPluw_-Eb4" target="_blank"> "Side Effects" M/V </a></p>
+	<p> Jun 19: <span id="tag"><a href="straykids.html#Yellow-Wood">[Yellow Wood]</a></span> <a href="https://youtu.be/qhsRdixGqTA" target="_blank"> "Side Effects" M/V Teaser 2 </a> </p>
+	<p> Jun 18: <span id="tag"><a href="straykids.html#Yellow-Wood">[Yellow Wood]</a></span> <a href="https://youtu.be/qgRhwmvYOZ4" target="_blank"> UNVEIL : TRACK "Side Effects" </a> </p>
+	<p> Jun 17: <span id="tag"><a href="straykids.html#Yellow-Wood">[Yellow Wood]</a></span> <a href="https://youtu.be/hRQsAzoYkDY" target="_blank"> "Side Effects" M/V Teaser 1  </a> </p>
+	<p> Jun 16: <span id="tag"><a href="straykids.html#Yellow-Wood">[Yellow Wood]</a></span> <a href="https://youtu.be/TgTAb4dFr8k" target="_blank"> UNVEIL : TRACK "TMT" </a> </p>
+	<p> Jun 15: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/134626" target="_blank"> Chan's Room EP24 - SPECIAL GUEST (3RACHA) </a> </p>
+	
+		<p> Jun 15: <span id="tag"><a href="shows.html#TWO-KIDS-ROOM">[TWO KIDS ROOM]</a></span> Teaser <a href="https://www.vlive.tv/video/134616" target="_blank"> V LIVE</a> <span id="nosubs">[no subs]</span> | <a href="https://youtu.be/jyynK0W1YJk" target="_blank"> YouTube </a> </p>
+	
+	<p> Jun 15: <span id="tag"><a href="straykids.html#Yellow-Wood">[Yellow Wood]</a></span> <a href="https://youtu.be/b46TaE69J-E" target="_blank"> UNVEIL : TRACK "Road Not Taken" </a> </p>
+	<p> Jun 14: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/134531" target="_blank"> Dog and Cat School 4! </a> </p>
+	<p> Jun 14: <span id="tag"><a href="straykids.html#Yellow-Wood">[Yellow Wood]</a></span> <a href="https://youtu.be/zRyQ9rha8gM" target="_blank"> UNVEIL : TRACK "Mixtape Spin-off" </a> </p>
+	<p> Jun 13: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/134306" target="_blank"> A-TEEN Hyunjin and I.N  </a> </p>
+	<p> Jun 13: <span id="tag"><a href="shows.html#More">[More]</a></span> <a href="https://www.vlive.tv/video/133309/playlist/123052" target="_blank"> A-TEEN Season 2 Episode 16 (Hyunjin and I.N)  </a> </p>
+	<p> Jun 13: <span id="tag"><a href="straykids.html#Yellow-Wood">[Yellow Wood]</a></span> <a href="https://youtu.be/XS5M5is76iw" target="_blank"> INTRO "Clé 2 : Yellow Wood" </a> </p>
+	<p> Jun 12: <span id="tag"><a href="straykids.html#Yellow-Wood">[Yellow Wood]</a></span> <a href="https://youtu.be/ZIq15XrgTe8" target="_blank"> "Clé 2: Yellow Wood" CH.SKZ Teaser Video</a> </p>
+	<p> Jun 11: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/133916" target="_blank"> Haengbokie's ASMR  </a> </p>
+	
+		<p> Jun 10: <span id="tag"><a href="shows.html#More">[IDOL RADIO]</a></span> <a href="https://www.vlive.tv/video/133331" target="_blank"> Episode 251 with Hyunjin (Voice Only) </a> <span id="nosubs">[no subs]</span> </p>
+	
+	<p> Jun 09: <span id="tag"><a href="straykids.html#Live-Perf">[Live Perf] </a></span> <a href="https://youtu.be/zL8tKamD7-Y" target="_blank"> Asia Model Festival: MIROH </a> </p>
+	<p> Jun 09: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/133514" target="_blank"> ROTY Award (Asia Model Festival) </a> </p>
+	<p> Jun 09: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/133456" target="_blank"> Chan's Room EP23 </a> </p>
+	<p> Jun 09: <span id="tag"><a href="shows.html#Interview">[Interview]</a></span> <a href="https://twitter.com/MTVNEWS/status/1137449216584892417?s=19" target="_blank"> MTV NEWS Never-before-seen Clip 3 </a> </p>
+	
+	<p> Jun 08: <span id="tag"><a href="shows.html#Interview">[Interview]</a></span> <a href="https://youtu.be/wYwoHfMgcas" target="_blank"> Entertainment Tonight </a> </p>
 	<p> Jun 07: <span id="tag"><a href="shows.html#Interview">[Interview]</a></span> <a href="https://twitter.com/MTVNEWS/status/1136724442426630144" target="_blank"> MTV NEWS Never-before-seen Clip 2  </a></p>
 	<p> Jun 05: <span id="tag"><a href="shows.html#Interview">[Interview]</a></span> <a href="https://youtu.be/gw6DGKyFcHI" target="_blank"> MTV News  </a> || <a href="https://twitter.com/MTVNEWS/status/1136075412625248256" target="_blank"> Never-before-seen Clip 1 </a></p>
 	<p> Jun 04: <span id="tag"><a href="shows.html#Interview">[Interview]</a></span> <a href="https://youtu.be/v9HgUu2TwO8" target="_blank"> Young Hollywood Part 3 </a> </p>
 	<p> Jun 04: <span id="tag"><a href="straykids.html#Yellow-Wood">[Yellow Wood]</a></span> <a href="https://youtu.be/R9N3xm3af7w" target="_blank"> "Clé 2 : Yellow Wood" Trailer </a> </p>
-	<p> Jun 02: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/132442" target="_blank"> CHAN's Room EP22 </a> </p>
+	<p> Jun 02: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/132442" target="_blank"> Chan's Room EP22 </a> </p>
 	
 	<p> Jun 01: <span id="tag"><a href="shows.html#Interview">[Interview]</a></span> <a href="https://youtu.be/Sg8xR-yoOeg" target="_blank"> Young Hollywood Part 1 </a> | <a href="https://youtu.be/Rvhas8azBF0" target="_blank"> Part 2 </a> </p>
 	
@@ -148,14 +237,14 @@
 	
 	<p> May 29: <span id="tag"><a href="shows.html#Interview">[Interview]</a></span> <a href="https://youtu.be/bYqGMQ64gUA" target="_blank"> iHeartRadio </a> </p>
 	<p> May 27: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/131355" target="_blank"> Maknae's Private Life 12 </a> </p>	
-	<p> May 27: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/131256" target="_blank"> CHAN's Room EP21 - LA (3RACHA) Part 1  </a> | <a href="https://www.vlive.tv/video/131273" target="_blank"> Part 2  </a> </p>
+	<p> May 27: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/131256" target="_blank"> Chan's Room EP21 - LA (3RACHA) Part 1  </a> | <a href="https://www.vlive.tv/video/131273" target="_blank"> Part 2  </a> </p>
 	
 		<p> May 26:  <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/131178" target="_blank"> Do you want to talk with Hyunjin?  </a> </p>
 	
 	<p> May 26: <span id="tag"><a href="shows.html#SKZ-TALKER">[SKZ-TALKER GO!]</a></span> DUSSELDORF <a href="https://www.vlive.tv/video/131164" target="_blank"> V LIVE</a> | <a href="https://youtu.be/6vUCi_es9Vk" target="_blank"> YouTube </a> </p>
 	<p> May 20: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/129919" target="_blank"> SKZ in the building!!!!!! </a> </p>
 	<p> May 19: <span id="tag"><a href="shows.html#SKZ-TALKER">[SKZ-TALKER GO!]</a></span> BUSAN <a href="https://www.vlive.tv/video/129818" target="_blank"> V LIVE</a> | <a href="https://youtu.be/BHI68MISyME" target="_blank"> YouTube </a> </p>
-	<p> May 19: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/129793" target="_blank"> CHAN's Room EP20 - HOUSTON! </a></p>	
+	<p> May 19: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/129793" target="_blank"> Chan's Room EP20 - HOUSTON! </a></p>	
 	<p> May 18: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/129700" target="_blank"> Hyunjin's Private Life ㅋㅋㅋ </a> </p>
 	<p> May 18: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/129689" target="_blank"> What’s up LA~~~!!! </a>	</p>
 	<p> May 17: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/129444" target="_blank"> Maknae's Private Life 11 </a> </p>	
@@ -165,8 +254,8 @@
 	<p> May 14: <span id="tag"><a href="shows.html#Interview">[Interview]</a></span> <a href="https://youtu.be/W16ie2HeXp0" target="_blank"> Stray Kids at BUILD Series </a> </p>
 	<p> May 12: <span id="tag"><a href="shows.html#SKZ-TALKER">[SKZ-TALKER GO!]</a></span> MANILA <a href="https://www.vlive.tv/video/128545" target="_blank"> V LIVE</a> | <a href="https://youtu.be/cxt_yYBq694" target="_blank"> YouTube </a> </p>
 	<p> May 11: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/128499" target="_blank"> STAY we miss you </a> </p>
-	<p> May 11: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/128434" target="_blank"> CHAN's Room EP19: SPECIAL GUEST! (OX) </a> </p>
-	<p> May 05: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/127426" target="_blank"> CHAN's Room EP18 - GERMANY! </a> </p>
+	<p> May 11: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/128434" target="_blank"> Chan's Room EP19: SPECIAL GUEST! (OX) </a> </p>
+	<p> May 05: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/127426" target="_blank"> Chan's Room EP18 - GERMANY! </a> </p>
 	<p> May 05: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/127402" target="_blank"> Back In Germany!!! </a> </p>
 	<p> May 04: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/127304" target="_blank"> Lee Know Changbin in Germany </a> </p>
 	<p> May 03: <span id="tag"><a href="shows.html#SKZ-TALKER">[SKZ-TALKER GO!]</a></span> SYDNEY <a href="https://www.vlive.tv/video/127258" target="_blank"> V LIVE</a> | <a href="https://youtu.be/BPbiILNohjw" target="_blank"> YouTube </a> </p>
@@ -174,7 +263,7 @@
 	<p> May 01: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/126676" target="_blank"> Before Busan fansign </a> </p>
 	
 <br><p> Apr 29: <span id="tag"><a href="shows.html#More">[More]</a></span> <a href="https://youtu.be/KkcDcvaVawQ" target="_blank"> Dingo School Part 3 </a> </p>
-	<p> Apr 28: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/126179" target="_blank"> CHAN's Room EP17 </a> </p>
+	<p> Apr 28: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/126179" target="_blank"> Chan's Room EP17 </a> </p>
 	<p> Apr 28: <span id="tag"><a href="shows.html#TWO-KIDS-ROOM">[TWO KIDS ROOM]</a></span> EP10 Undisclosed Clip <a href="https://www.vlive.tv/video/126173" target="_blank"> V LIVE</a> | <a href="https://youtu.be/WSwHiB2JiXM" target="_blank"> YouTube </a> </p>
 	<p> Apr 28: <span id="tag"><a href="straykids.html#MIROH">[MIROH]</a></span> <a href="https://www.vlive.tv/video/126108" target="_blank"> [HI-STAY TOUR FINALE IN SOUL] Highlight Clip "Young Wings" </a> </p>
 	<p> Apr 27:  <span id="tag"><a href="shows.html#TWO-KIDS-ROOM">[TWO KIDS ROOM]</a></span> EP09 Changbin x I.N <a href="https://www.vlive.tv/video/126092" target="_blank"> V LIVE</a> | <a href="https://youtu.be/NgnEsO3vDAI" target="_blank"> YouTube </a> </p>
@@ -182,11 +271,11 @@
 	<p> Apr 26: <span id="tag"><a href="shows.html#More">[More]</a></span> <a href="https://youtu.be/FhbsGDDSruI" target="_blank"> Dingo School Part 2 </a> </p>
 	<p> Apr 25: <span id="tag"><a href="shows.html#SKZ-TALKER">[SKZ-TALKER GO!]</a></span> MELBOURNE <a href="https://www.vlive.tv/video/125678" target="_blank"> V LIVE</a> | <a href="https://youtu.be/iRUhVkJoyFU" target="_blank"> YouTube </a> </p>
 	<p> Apr 24: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/125364" target="_blank"> STAAAAAY! THANK YOUUUU~ </a> </p>
-	<p> Apr 24: <span id="tag"><a href="straykids.html#Live-Perf">[Live Perf] </a></span>  <a href="https://youtu.be/IvEaKEREtGI" target="_blank"> The Fact Music Awards: Mixtape#1 + MIROH </a> </p>
+	<p> Apr 24: <span id="tag"><a href="straykids.html#Live-Perf">[Live Perf] </a></span>  <a href="https://youtu.be/TkhVQlGhGuc" target="_blank"> The Fact Music Awards: Mixtape#1 + MIROH </a> </p>
 	
 		<p> Apr 24: <span id="tag"><a href="shows.html#FINDING-SKZ">[Finding Stray Kids]</a></span> <a href="https://www.vlive.tv/video/124843" target="_blank"> Episode 6 </a> | <a href="https://youtu.be/bdO_1h-jxkk" target="_blank"> Bonus Clip </a> <span id="nosubs">[no subs]</span> </p>
 	
-	<p> Apr 23: <span id="tag"><a href="straykids.html#Live-Perf">[Live Perf] </a></span> Bongchoon Radio  <a href="https://youtu.be/sEryZM2E7o0" target="_blank"> Awkward Silence </a> | <a href="https://youtu.be/qUvJPZscAxY" target="_blank"> Insomnia </a> | <a href="https://youtu.be/D3L4U5LqrsA" target="_blank"> Grow Up </a> | <a href="https://youtu.be/loKJSS5kLo0" target="_blank"> MIROH </a> </p>
+	<p> Apr 23: <span id="tag"><a href="straykids.html#Live-Perf">[Live Perf] </a></span> MBC Dreaming Radio  <a href="https://youtu.be/sEryZM2E7o0" target="_blank"> Awkward Silence </a> | <a href="https://youtu.be/qUvJPZscAxY" target="_blank"> Insomnia </a> | <a href="https://youtu.be/D3L4U5LqrsA" target="_blank"> Grow Up </a> | <a href="https://youtu.be/loKJSS5kLo0" target="_blank"> MIROH </a> </p>
 	<p> Apr 23: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/125173" target="_blank"> Do you want to talk to Hyunjin? </a> </p>
 	<p> Apr 23: <span id="tag"><a href="shows.html#SKZ-TALKER">[SKZ-TALKER]</a></span> Episode 15  <a href="https://www.vlive.tv/video/125159" target="_blank"> V LIVE</a> | <a href="https://youtu.be/MBVmxzeUiOQ" target="_blank"> YouTube </a> </p>
 	
@@ -194,7 +283,7 @@
 			
 	<p> Apr 22: <span id="tag"><a href="shows.html#More">[More]</a></span> <a href="https://youtu.be/GdqwuasmUnY" target="_blank"> Dingo School Part 1 </a></p>
 	<p> Apr 21: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/124772" target="_blank"> [Sunday Kids] Board Game Day </a></p>
-	<p> Apr 21: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/124756" target="_blank"> CHAN's Room EP16: Special Guest  </a></p>
+	<p> Apr 21: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/124756" target="_blank"> Chan's Room EP16: Special Guest  </a></p>
 	<p> Apr 20: <span id="tag"><a href="shows.html#TWO-KIDS-ROOM">[TWO KIDS ROOM]</a></span> EP08 Woojin x HAN  <a href="https://www.vlive.tv/video/124710" target="_blank"> V LIVE</a> | <a href="https://youtu.be/ZabC85W-dP4" target="_blank"> YouTube </a> </p>
 	<p> Apr 20: <span id="tag"><a href="shows.html#TWO-KIDS-ROOM">[TWO KIDS ROOM]</a></span> EP07 Hyunjin x Felix <a href="https://www.vlive.tv/video/124709" target="_blank"> V LIVE</a> | <a href="https://youtu.be/IJItrfCMU30" target="_blank"> YouTube </a> </p>
 	
@@ -206,7 +295,7 @@
 	<p> Apr 17: <span id="tag"><a href="shows.html#FINDING-SKZ">[Finding Stray Kids]</a></span> <a href="https://www.vlive.tv/video/123715" target="_blank"> Episode 5 </a> | <a href="https://youtu.be/oli2gp2CsRU" target="_blank"> Bonus Clip </a> </p>
 	<p> Apr 16: <span id="tag"><a href="shows.html#SKZ-TALKER">[SKZ-TALKER]</a></span> Episode 14 <a href="https://www.vlive.tv/video/123960" target="_blank"> V LIVE</a> | <a href="https://youtu.be/M7tOL3EYJis" target="_blank"> YouTube </a> </p>	
 	<p> Apr 15: <span id="tag"><a href="straykids.html#MVs">[M/V]</a></span> <a href="https://youtu.be/12N0qEr_RGk" target="_blank"> "Chronosaurus" Video </a> </p>
-	<p> Apr 14: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/123672" target="_blank"> CHAN's Room EP15 </a> | <a href="https://www.vlive.tv/video/123676" target="_blank"> Outro! </a> </p>
+	<p> Apr 14: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/123672" target="_blank"> Chan's Room EP15 </a> | <a href="https://www.vlive.tv/video/123676" target="_blank"> Outro! </a> </p>
 	<p> Apr 13: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/123608" target="_blank"> STAY 1기 Challenge!!!!!! </a> </p>
 	<p> Apr 13: <span id="tag"><a href="shows.html#TWO-KIDS-ROOM">[TWO KIDS ROOM]</a></span> EP06 Lee Know x Seungmin <a href="https://www.vlive.tv/video/123585" target="_blank"> V LIVE</a> | <a href="https://youtu.be/M-5eA6y3ljQ" target="_blank"> YouTube </a> </p>
 	<p> Apr 13: <span id="tag"><a href="shows.html#TWO-KIDS-ROOM">[TWO KIDS ROOM]</a></span> EP05 Bang Chan x Changbin <a href="https://www.vlive.tv/video/123584" target="_blank"> V LIVE</a>| <a href="https://youtu.be/6yj7YwF34-4" target="_blank"> YouTube </a> </p>
@@ -227,7 +316,7 @@
 	<p> Apr 08: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/122443" target="_blank"> Woojin's Birthday </a> </p>
 	<p> Apr 07: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/122379" target="_blank"> HAN and the Beanstalk  </a> </p>
 	<p> Apr 07: <span id="tag"><a href="straykids.html#Dance-Practice">[Dance Practice]</a></span> <a href="https://youtu.be/r4oJJCFxi5Y" target="_blank"> MIROH (Heart Ver.) </a> </p>
-	<p> Apr 07: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/122316" target="_blank"> CHAN's Room EP14 - Aussie Line </a></p>
+	<p> Apr 07: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/122316" target="_blank"> Chan's Room EP14 - Aussie Line </a></p>
 	<p> Apr 06: <span id="tag"><a href="shows.html#TWO-KIDS-ROOM">[TWO KIDS ROOM]</a></span> EP04 Woojin x I.N <a href="https://www.vlive.tv/video/122304" target="_blank"> V LIVE</a> | <a href="https://youtu.be/5kIpoJp5Iyc" target="_blank"> YouTube </a> </p>
 	<p> Apr 06: <span id="tag"><a href="shows.html#TWO-KIDS-ROOM">[TWO KIDS ROOM]</a></span> EP03 Hyunjin x HAN <a href="https://www.vlive.tv/video/122303" target="_blank"> V LIVE</a> | <a href="https://youtu.be/zXYJ1MypWVA" target="_blank"> YouTube </a> </p>
 	<p> Apr 05: <span id="tag"><a href="straykids.html#MVs">[M/V]</a></span> <a href="https://youtu.be/1Un3wEJFu7A" target="_blank"> "Boxer" Video (Street Ver.) </a> </p>
@@ -241,7 +330,7 @@
 	
 	<br><p> Mar 31: <span id="tag"><a href="straykids.html#Live-Perf">[Live Perf] </a></span> <a href="https://drive.google.com/file/d/1DdwPOOSpB-_tizZsWNnXS8nvyXXKD--9/view?usp=drivesdk" target="_blank"> DEAN - D (Half Moon) cover by HAN (FULL)</a>  </p>
 	<p> Mar 31: <span id="tag"><a href="straykids.html#Live-Perf">[Live Perf] </a></span> <a href="https://youtu.be/7q8RjnsLZfA" target="_blank"> 'Chuno' VS 'Imgeokjjeong' (HAN) - 너를 만나 (Me After You) </a> </p>
-	<p> Mar 31: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/121189" target="_blank"> CHAN's Room Live EP13 </a> </p>
+	<p> Mar 31: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/121189" target="_blank"> Chan's Room Live EP13 </a> </p>
 	<p> Mar 31: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/121179" target="_blank"> [SUNDAY KIDS] TMI </a> </p>
 	<p> <span id="nosubs">*</span> Feb 28: <span id="tag"><a href="shows.html#More">[More]</a></span> <a href="https://youtu.be/jv19JLNStVM" target="_blank">  Super Intern EP06 - Stray Kids Cut </a> <span id="subs">subs by: StrayKSubs </span> </p>
 	<p> Mar 30: <span id="tag"><a href="shows.html#TWO-KIDS-ROOM">[TWO KIDS ROOM]</a></span> EP02 Bang Chan x Seungmin <a href="https://www.vlive.tv/video/121122" target="_blank"> V LIVE</a> | <a href="https://youtu.be/snm6HUpjpKM" target="_blank"> YouTube </a> </p>	
@@ -269,19 +358,19 @@
 		<p> Mar 23: <span id="tag"><a href="shows.html#TWO-KIDS-ROOM">[TWO KIDS ROOM]</a></span> Teaser <a href="https://www.vlive.tv/video/119876" target="_blank"> V LIVE</a> | <a href="https://youtu.be/5L2nnIe0BBc" target="_blank"> YouTube </a> <span id="nosubs">[no subs]</span> </p>
 	
 	<p> Mar 23: <span id="tag"><a href="straykids.html#MIROH">[MIROH]</a></span> <a href="https://youtu.be/M6f2kJ922Ug" target="_blank"> "MIROH" M/V Teaser 2 </a> </p>
-	<p> Mar 22: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/119821" target="_blank"> CHAN's Live EP12: Special Guest </a> </p>
+	<p> Mar 22: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/119821" target="_blank"> Chan's Live EP12: Special Guest </a> </p>
 	<p> Mar 22: <span id="tag"><a href="straykids.html#MIROH">[MIROH]</a></span> <a href="https://youtu.be/PpgfYNI5YDs" target="_blank"> "MIROH" M/V Teaser 1  </a> </p>
 	<p> Mar 21: <span id="tag"><a href="straykids.html#MIROH">[MIROH]</a></span> <a href="https://youtu.be/GNgrkwTnFZ0" target="_blank"> UNVEIL : TRACK "Mixtape#4" </a> </p>
 	<p> Mar 21: <span id="tag"><a href="straykids.html#MIROH">[MIROH]</a></span> <a href="https://youtu.be/btdWlC_6dmE" target="_blank"> UNVEIL : TRACK "Entrance" </a> </p>
 	<p> Mar 20: <span id="tag"><a href="shows.html#FINDING-SKZ">[Finding Stray Kids]</a></span> <a href="https://www.vlive.tv/video/118914" target="_blank"> EPISODE 1 </a> | <a href="https://youtu.be/tP720mgbuGU" target="_blank"> Bonus Clip </a> </p>
 	<p> Mar 20: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/119215" target="_blank"> Hyunjinie's Birthday </a> </p>
 	<p> Mar 20: <span id="tag"><a href="straykids.html#MIROH">[MIROH]</a></span> <a href="https://youtu.be/T1i9cvewUYU" target="_blank"> UNVEIL : TRACK "Chronosaurus"  </a> </p>
-	<p> Mar 19: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/119161" target="_blank"> CHAN's Room EP11 </a> </p>
+	<p> Mar 19: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/119161" target="_blank"> Chan's Room EP11 </a> </p>
 	<p> Mar 19: <span id="tag"><a href="straykids.html#MIROH">[MIROH]</a></span> <a href="https://youtu.be/KKtN_ee9oL0" target="_blank"> UNVEIL : TRACK "19" </a> </p>
 	<p> Mar 18: <span id="tag"><a href="shows.html#More">[More]</a></span> <a href="https://www.vlive.tv/video/118921" target="_blank"> Weekly Idol V Live </a> </p>
 	<p> Mar 18: <span id="tag"><a href="straykids.html#MIROH">[MIROH]</a></span> <a href="https://youtu.be/etwL2xWbfK0" target="_blank"> UNVEIL : TRACK "Boxer" </a> </p>
 	<p> Mar 18: <span id="tag"><a href="straykids.html#MIROH">[MIROH]</a></span> <a href="https://youtu.be/LdOT4dsbldQ" target="_blank"> UNVEIL : TRACK "Maze of Memories"</a> </p>
-	<p> Mar 17: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/118878" target="_blank"> CHAN's Room EP10.5 </a> </p>
+	<p> Mar 17: <span id="tag"><a href="vlives.html#2019">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/118878" target="_blank"> Chan's Room EP10.5 </a> </p>
 	<p> Mar 17: <span id="tag"><a href="straykids.html#MIROH">[MIROH]</a></span> <a href="https://youtu.be/l3x2u_bHFA0" target="_blank"> INTRO "Clé 1 : MIROH" </a> </p>
 	<p> Mar 15: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/118688" target="_blank"> HI-STAY IN BUSAN! </a> </p>
 	<p> Mar 14: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/118506" target="_blank"> Maknae's Private Life 9 (feat. White Day) </a> </p>
@@ -290,7 +379,7 @@
 	<p> <span id="nosubs">*</span> Feb 07: <span id="tag"><a href="shows.html#More">[More]</a></span> <a href="https://youtu.be/zbINTc7CGsA" target="_blank">  Super Intern EP03 - Stray Kids Cut </a>  <span id="subs">subs by: StrayKSubs</span> </p>
 	<p> Mar 12: <span id="tag"><a href="shows.html#The-9th">[THE 9TH]</a></span> Season 4 Episode 5 <a href="https://www.vlive.tv/video/117992" target="_blank"> V LIVE</a> | <a href="https://youtu.be/Xs-uFWHcYf8" target="_blank"> YouTube </a> </p>
 	<p> Mar 11: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/117765" target="_blank"> Please play with Binnie  </a> </p>
-	<p> Mar 10: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/117523" target="_blank"> CHAN's Room EP10 </a> </p>
+	<p> Mar 10: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/117523" target="_blank"> Chan's Room EP10 </a> </p>
 	
 		<p> Mar 08: <span id="tag"><a href="shows.html#More">[More]</a></span> <a href="https://www.vlive.tv/video/116973" target="_blank"> IDOL RADIO EP157 (with Hyunjin as guest) </a> <span id="nosubs">[no subs]</span> </p>
 	
@@ -302,13 +391,13 @@
 	<p> Mar 06: <span id="tag"><a href="straykids.html#MIROH">[MIROH]</a></span> <a href="https://youtu.be/EcuYZI-Qv-0" target="_blank"> Stray Kids "20190325" </a> </p>
 	<p> Mar 05: <span id="tag"><a href="shows.html#The-9th">[THE 9TH]</a></span> Season 4 Episode 4 <a href="https://www.vlive.tv/video/116495" target="_blank"> V LIVE</a> | <a href="https://youtu.be/9AbGa3QUg2o" target="_blank"> YouTube </a> </p>
 	<p> Mar 04: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/116228" target="_blank"> Talk Time with Hyunjin </a> </p>
-	<p> Mar 03: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/116017" target="_blank"> CHAN's Room EP09 </a> </p>	
+	<p> Mar 03: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/116017" target="_blank"> Chan's Room EP09 </a> </p>	
 	<p> Mar 02:   <span id="tag"><a href="shows.html#More">[More]</a></span> <a href="https://www.vlive.tv/video/115718" target="_blank"> re:memVer Party 2019 GLOBAL VLIVE TOP 10 ROOKIE STAGE </a> </p>
 	<p> Mar 02: <span id="tag"><a href="shows.html#More">[More]</a></span>  <a href="https://www.vlive.tv/video/114099" target="_blank"> re:memVer Party 2019 re:memV-log </a> </p>
 	<br><p> Feb 28: <span id="tag"><a href="shows.html#SKZ-TALKER">[SKZ-TALKER GO!]</a></span> JAKARTA <a href="https://www.vlive.tv/video/115741" target="_blank"> V LIVE</a> | <a href="https://youtu.be/T_r2UwItaks" target="_blank"> YouTube </a> </p>
 	<p> Feb 28: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/115739" target="_blank"> Maknae's Private Life 7 Part 1 </a> |  <a href="https://www.vlive.tv/video/115746" target="_blank"> Part 2 </a></p>
 	<p> Feb 26: <span id="tag"><a href="shows.html#The-9th">[THE 9TH]</a></span> Season 4 Episode 3 <a href="https://www.vlive.tv/video/114853" target="_blank"> V LIVE</a>  | <a href="https://youtu.be/A5THsuS-eyU" target="_blank"> YouTube </a></p>
-	<p> Feb 25: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/114609" target="_blank"> CHAN's Room EP08 - SYDNEY!  </a> </p>
+	<p> Feb 25: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/114609" target="_blank"> Chan's Room EP08 - SYDNEY!  </a> </p>
 	<p> Feb 24: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/114596" target="_blank"> Bang, Fel Hometown </a> </p>
 	<p> Feb 23: <span id="tag"><a href="shows.html#SKZ-TALKER">[SKZ-TALKER GO!]</a></span> THAILAND <a href="https://www.vlive.tv/video/114553" target="_blank"> V LIVE</a> | <a href="https://youtu.be/U35ePIHz85Y" target="_blank"> YouTube </a> </p>
 	<p> Feb 22: <span id="tag"><a href="straykids.html#MoreSKZ">[More SKZ]</a></span> <a href="https://youtu.be/JF2rQm5Qpks" target="_blank"> Stray Kids - IVY with U </a> </p>
@@ -317,14 +406,14 @@
 	
 	<p> Feb 20: <span id="tag"><a href="straykids.html#MoreSKZ">[More SKZ]</a></span> <a href="https://open.spotify.com/track/5nwj3GrorH7s1oaSlVleeD" target="_blank"> Yoon Jisung ft. Changbin - You... Like the Wind </a> </p>
 	<p> Feb 19: <span id="tag"><a href="shows.html#The-9th">[THE 9TH]</a></span> Season 4 Episode 2 <a href="https://www.vlive.tv/video/113860" target="_blank"> V LIVE</a> | <a href="https://youtu.be/azPfLHecIME" target="_blank"> YouTube </a> </p>
-	<p> Feb 17: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/113535" target="_blank"> CHAN's Room EP07 </a> </p>
+	<p> Feb 17: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/113535" target="_blank"> Chan's Room EP07 </a> </p>
 	<p> Feb 16: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/113464" target="_blank"> Congrats Congrats Congrats~~~ </a> </p>
 	<p> Feb 16: <span id="tag"><a href="straykids.html#Live-Perf">[Live Perf] </a></span> <a href="https://youtu.be/RAvQWgQyexs" target="_blank"> The Show (New MCs) : CHA NI X HYUN JIN - Fools + Attention + I Like It </a> </p>
 	<p> Feb 15: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/113231" target="_blank"> Hyunjin's Graduation  </a> </p>
 	<p> Feb 14: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/113078" target="_blank"> Seungmin's Graduation  </a> </p>
 	<p> Feb 12: <span id="tag"><a href="shows.html#The-9th">[THE 9TH]</a></span> Season 4 Episode 1 <a href="https://www.vlive.tv/video/112864" target="_blank"> V LIVE</a> | <a href="https://youtu.be/RN8eDvjADhI" target="_blank"> YouTube </a> </p>
 	<p> Feb 11: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/112606" target="_blank"> So sad ㅠㅠ </a> </p>
-	<p> Feb 10: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/112548" target="_blank"> CHAN's Room EP06</a> </p>
+	<p> Feb 10: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/112548" target="_blank"> Chan's Room EP06</a> </p>
 	<p> Feb 08: <span id="tag"><a href="shows.html#More">[More]</a></span>  <a href="https://www.vlive.tv/video/111416" target="_blank"> IDOL RADIO EP129 (with Lee Know and Hyunjin as guests) </a> </p>
 	<p> Feb 07: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/112299" target="_blank"> Maknae's Private Life 6 (I.N Day) </a> </p>
 	<p> Feb 03: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/111927" target="_blank"> Maknae's Private Life 5 (Feat. Happy New Year) </a> </p>
@@ -334,12 +423,12 @@
 	<p> Feb 01: <span id="tag"><a href="shows.html#More">[More]</a></span> <a href="https://www.vlive.tv/video/110803" target="_blank"> IDOL RADIO EP122 (Hyunjin as Guest) </a> </p>
 	<p> Feb 01: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/111746" target="_blank"> Hyunjin's Practice Room#2 </a> </p>
 	
-<br><p> Jan 31: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/111538" target="_blank"> CHAN's Room EP05 </a> </p>
+<br><p> Jan 31: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/111538" target="_blank"> Chan's Room EP05 </a> </p>
 	<p> Jan 31: <span id="tag"><a href="straykids.html#Dance-Practice">[Dance Practice]</a></span> <a href="https://youtu.be/g9Bmnz6HzwU" target="_blank"> I am YOU Dance Break (Gaon Chart Music Awards ver.) </a> </p>
 	<p> Jan 29: <span id="tag"><a href="shows.html#More">[More]</a></span> <a href="https://www.vlive.tv/video/110552" target="_blank"> Playful Boy EP07 </a> </p>
 	
 	<p> Jan 28: <span id="tag"><a href="straykids.html#Dance-Practice">[Dance Practice]</a></span> <a href="https://youtu.be/cZN2bONtNP8" target="_blank"> Intro (NOT! WHO? YOU.) Golden Disc Award Ver. </a> </p>
-	<p> Jan 27: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/110752" target="_blank"> CHAN's Room EP04: SPECIAL GUEST </a> </p>
+	<p> Jan 27: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/110752" target="_blank"> Chan's Room EP04: SPECIAL GUEST </a> </p>
 	<p> Jan 25: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/110490" target="_blank"> Arrived at Jakarta </a> </p>
 	<p> Jan 24: <span id="tag"><a href="straykids.html#Dance-Practice">[Dance Practice]</a></span> <a href="https://youtu.be/PDWxEN9WA8I" target="_blank"> Bang Bang Bang (cover)  </a> </p>
 	<p> Jan 24: <span id="tag"><a href="shows.html#More">[More]</a></span> <a href="https://www.vlive.tv/video/110044" target="_blank"> Playful Boy EP06 </a> </p>
@@ -351,7 +440,7 @@
 	<p> Jan 22: <span id="tag"><a href="shows.html#More">[More]</a></span> <a href="https://www.vlive.tv/video/109890" target="_blank"> Playful Boy EP04 </a> </p>
 	<p> Jan 21: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/109948" target="_blank"> Maknae's Private Life 4 </a> </p>
 	
-	<p> Jan 20: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/109765" target="_blank"> CHAN's Room EP. 3 </a> </p>
+	<p> Jan 20: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/109765" target="_blank"> Chan's Room EP. 3 </a> </p>
 	<p> Jan 19: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/109727" target="_blank"> After UNVEIL in Bangkok Part 1  </a> | <a href="https://www.vlive.tv/video/109728" target="_blank"> Part 2  </a> </p>
 	<p> Jan 19: <span id="tag"><a href="straykids.html#SO2019">[STEP OUT 2019]</a></span> <a href="https://www.vlive.tv/video/109714" target="_blank"> "STEP OUT 2019" Director's Cut </a> </p>
 	<p> Jan 18: <span id="tag"><a href="straykids.html#SO2019">[STEP OUT 2019]</a></span> <a href="https://youtu.be/6f3uy8EgJUM" target="_blank"> STEP OUT 2019 </a> </p>
@@ -363,7 +452,7 @@
 	<p> Jan 12: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/108671" target="_blank"> Maknae's Private Life 2 </a> </p>
 	<p> Jan 11: <span id="tag"><a href="shows.html#More">[More]</a></span> <a href="https://www.vlive.tv/video/107916" target="_blank"> IDOL RADIO EP101(Hyunjin as guest) </a> </p>
 	<p> Jan 11: <span id="tag"><a href="straykids.html#I-am-YOU">[I am YOU]</a></span> <a href="https://youtu.be/2Fcg9Ste3Vk" target="_blank"> A Song For You: Hero's Soup Live Performance </a> </p>
-	<p> Jan 10: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/108499" target="_blank"> CHAN's Room EP. 2 </a> </p>
+	<p> Jan 10: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/108499" target="_blank"> Chan's Room EP. 2 </a> </p>
 	<p> Jan 09: <span id="tag"><a href="shows.html#More">[M2]</a></span> <a href="https://youtu.be/VCSjvIGOKGg" target="_blank"> MY FIRST MAMA EP. 02 </a> </p>
 	<p> Jan 06: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/107851" target="_blank"> 2019 First Rookie Award </a> </p>
 	
@@ -373,15 +462,14 @@
 	
 	<p> Jan 05: <span id="tag"><a href="shows.html#More">[M2]</a></span> <a href="https://youtu.be/EGff2uCBdf4" target="_blank"> MY FIRST MAMA EP. 01 </a> </p>
 	<p> Jan 03: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/107334" target="_blank">  Dog and Cat School </a> </p>
-	<p> Jan 02: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/107284" target="_blank"> CHAN's Room </a> </p>
+	<p> Jan 02: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/107284" target="_blank"> Chan's Room </a> </p>
 	<p> Jan 01: <span id="tag"><a href="vlives.html">[V LIVE]</a></span> <a href="https://www.vlive.tv/video/107058" target="_blank"> First live for 2019 </a> </p>
 		
 	 
 	
 	</div>
 	<!-- 2018 Section-->
-	<div id="allLinks">
-	
+	<div class="box bigBox" id="allLinks">
 		<div id="2018" class="secTitle">2018</div>
 		<h4>Music and Performances</h4>
 			<p><a href="straykids.html#MVs-2018">M/V & Performance Videos</a></p>
@@ -494,7 +582,7 @@
 	
 	
 	<!-- 2017 Section-->
-	<div id="allLinks">
+	<div class="box bigBox" id="allLinks">
 	
 		<div id="2017" class="secTitle">2017</div>
 		<h4>Shows</h4>
