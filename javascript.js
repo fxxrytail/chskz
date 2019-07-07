@@ -23,6 +23,8 @@ function openSurvey() {
 		document.getElementById("about").style.display = "none";
 		document.getElementById("survey").style.display = "block";
 		btnSurveyText = document.getElementById("btnSurvey").innerHTML = "Click to hide";
+		
+		document.getElementById("myModal").style.display = "block";
 	}
 	
 	else {
@@ -30,4 +32,14 @@ function openSurvey() {
 		document.getElementById("survey").style.display = "none";
 		btnSurveyText = document.getElementById("btnSurvey").innerHTML = "Click here if you're new to Stray Kids";
 	}
+}
+
+// When the user clicks the button, open the modal 
+function openModal() {
+  document.getElementById("new2skz").style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+function closeModal() {
+  document.getElementById("new2skz").style.display = "none";
 }
