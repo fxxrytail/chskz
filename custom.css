@@ -32,7 +32,7 @@ h5 { text-align:center; }
 .sticky { position:sticky; top:0; }
 
 #btnTop {
-  color: #ffffff;
+  color: #000000;
   background-color: #aba476a3;
   display: none;
   position: fixed;
