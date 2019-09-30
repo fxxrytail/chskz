@@ -32,7 +32,7 @@ h5 { text-align:center; }
 .sticky { position:sticky; top:0; }
 
 #btnTop {
-  color: #ffffff;
+  color: #000000;
   background-color: #aba476a3;
   display: none;
   position: fixed;
@@ -151,20 +151,18 @@ div.menu {display:none}
 #nav {
 	color: #f6d106;
 	font-weight:bold;
-	padding:0;
+	padding-bottom: 5px;
 }
 
 #nav button{
-	border: none;
+	border: 1px solid #aba476;
 	color: #ffffff;
 	background-color:#0e0e0c;
-	border-top: 1px solid #797039;
-	padding: 5px;
+	padding: 4px;
+	font-size:12px;
 	text-align: center;
 	text-decoration: none;
-	display: inline-block;
-	margin: 0;
-	width:100%;
+	margin: 2px;
 }
 
 
