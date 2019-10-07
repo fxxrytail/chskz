@@ -1,0 +1,161 @@
+double knot pallete
+
+Links 
+from #f6d106 to #2F9FB7
+
+Sections and button
+from #ffd700 to #e8382a
+
+Main's bg, page-btn higlight
+from #aba476 to #A7A396
+
+No subs, text hover 
+from #d26b02 to #e8382a
+
+borders
+from #797039 to #52413D
+
+
+
+=====
+side effects pallete
+
+#2c2b26 grayish brown dark 
+allLinks bg
+body bg
+
+#aba476 grayish brown light
+main bg
+page-btn higlight
+nav (hover) bg 
+
+#f6d106 gold yellow
+links 
+New2SKZ color
+navigation color
+
+
+#ffd700 yellow
+section bg 
+nav button (active) bg
+
+#ffe2a0 peach
+nosubs color 
+button (hover) 
+
+#797039 brown
+borders
+
+1: #2c2b26 / #0e0e0c
+2: #aba476
+3: #f6d106
+4: #ffd700
+5: #ffe2a0 / #d26b02
+6: #ffffff
+7: #000000
+8: #797039
+9: #808080
+
+
+==============================
+links: #FFEB3B #f6d106
+text: #ffffff
+allLinks background:#000000d9
+section title bg: #9E9E9E
+
+YELLOW: #FFEB3B
+#allLinks a: color (#b71c1c)
+
+YELLOW: #FFD700
+#small: background-color (#010413)
+.secTitle: background-color (#010413)
+
+#f6d106
+#about a: color (#e8382a)
+
+WHITE: #FFFFFF
+#allLinks: color (+)
+#tag a: color (#000000)
+
+BLACK: #000000
+#small: color (#FFFFFF)
+.secTitle: color (#FFFFFF)
+
+
+BLACK w/ opacity: #000000d9
+#allLinks: background-color (+)
+
+GRAY: #9E9E9E
+
+RED: #e8382a
+#nosubs: color (#0663a5)
+
+
+
+SECTIONs
+color: black
+background-color: yellow #FFD700
+
+NAVIGATION BUTTON and New2SKZ BUTTON
+
+*click
+color: black
+background-color: yellow #FFD700
+
+New2SKZ BUTTON
+*click
+color: black #000000
+background-color: yellow #FFD700
+
+
+
+
+
+============================
+as of march 14
+
+RED: #e8382a
+#allLinks a: color (#b71c1c)
+#about a: color 
+#box a: color 
+#btnTop:hover: color  
+#btnTop:active: color 
+.box button:hover: color 
+.box button:active: color 
+.btn-container:hover: color 
+.btn-container:active: color 
+
+
+BLACK: #000000
+body: background-color 
+#btnTop:hover: b-c 
+.secTitle: background-color 
+.box: background  
+.box button: b-c 
+.box button:hover: b-c 
+.btn-container button: b-c 
+.btn-container:hover: b-c 
+
+WHITE: #ffffff
+#btnTop:active: background-color 
+.secTitle: color 
+.box button: color 
+.box button:active: background-color 
+.btn-container:active: background-color 
+
+
+YELLOW: #e2d730
+.box: color 
+#box button: color 
+
+BLUE: #0663a5
+#nosubs: color 
+
+OTHERS
+.box font-weight: bold (+) 
+#allLinks border: solid 
+#about border: solid 
+.box button:active border: solid 
+.box button:active: font-weight:bold (+) 
+.btn-container:active: font-weight:bold (+) 
+javascript.js > document.getElementById("box").style.border : solid;
