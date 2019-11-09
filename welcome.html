@@ -14,32 +14,36 @@
   
 </head>
 
-
 <body>
-	
-	<button onclick="topFunction()" id="btnTop" title="Go to top">Top</button>
-<!-- END OF HEADER -->
-<!-- ***EVERYTHING ABOVE MUST BE IN EVERY PAGE***-->
+<!--counter-->
+<div align=center style="display:none"><img src='https://www.counter12.com/img-ZaY7b3d05ZYzWybb-15.gif' border='0' alt='web counter free'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=ZaY7b3d05ZYzWybb'></script></div>
+<!--/counter-->
+
+<div id="modalBG" class="modal" onclick="closeMenu()"></div>
+<button onclick="topFunction()" id="btnTop" title="Go to top">Top</button>
+
    <div class="btn-container">
-		<div class="menu">
-			<a href="skwhite.html"><button>Spot Kids: White</button></a>
-			<a href="skblack.html"><button>Spot Kids: Black</button></a>
-		</div>
-		
+		<button class="btnMenu" id="menuColor" onclick="openMenu()">Menu</button>
 		<a href="index.html"><button>Home</button></a>
 		<a href="straykids.html"><button title="Music Videos, Dance Practices and etc.">Stray Kids</button></a>
 		<a href="shows.html"><button>Shows</button></a>
 		<a href="vlives.html"><button>V Lives</button></a>
-		<span class="menu">
-			<a href="skwhite.html"><button>Spot Kids: White</button></a>
-			<a href="skblack.html"><button>Spot Kids: Black</button></a>
+		<span class="morepage">
+			<a href="spotkids.html"><button>Spot Kids</button></a>
 		</span>
-	  </div>
+		
+		<!-- Drop Down Menu -->
+		<div class="menuList" id="menuContent" onclick="closeMenu()">
+			<span class="morepage-menu" id="page">
+				<h4>More Pages</h4>
+				<a href="spotkids.html"><button>Spot Kids</button></a>
+				<a href="etc.html"><button>ETC</button></a>
+			</span>
+		</div>
+	</div>
 	  
   <div class="main">
     <div class="section group">
-
-
 <!-- LINKS SECTION HERE -->
 	<div class="col span_3_of_3">
 		<div class="box bigBox" id="allLinks" style="text-align:center">

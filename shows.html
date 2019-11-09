@@ -16,13 +16,17 @@
 
 
 <body>
-<!-- New to SKZ -->
-<div id="new2skz" class="modal">
-  <div class="box modalBox">
-    <span onclick="closeModal()" class="close">&times;</span>
+<!--counter-->
+<div align=center style="display:none"><img src='https://www.counter12.com/img-9WZY12BbZbx20C3Z-15.gif' border='0' alt='conter12'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=9WZY12BbZbx20C3Z'></script></div>
+<!--/counter-->
+
+<div id="modalBoxBG" class="modal" onclick="closeModal()">
+	<!-- ABOUT SECTION HERE -->	
+	<div class="box modalBox">
+		<span onclick="closeModal()" class="close">&times;</span>
 		<img src="img/skz.jpg" style="width:90%"/>
 		<p>
-		  CHANNEL SKZ is a fanmade site for compilation of links of Stray Kids' videos such as music videos, performances, shows, guestings mostly from their official sites. 
+		  CHANNEL SKZ is a fanmade site for compilation of links of Stray Kids' videos such as music videos, performances, shows, guestings mostly from their official sites. <br><br>
 		  CFs, tour promotion vids, fancams, etc. are not included in this site. 
 		  Please take note that I may not be able to put all the links here. 
 		  You may send me links that should be in this site if I missed important ones.
@@ -34,69 +38,81 @@
 		
 		<p>Thank you and have fun watching Stray Kids! (≧▽≦)</p>
 		<p>EST.: 180821</p>
-  </div>
+	</div>
+	<!-- END OF ABOUT -->	
 </div>
+<div id="modalBG" class="modal" onclick="closeMenu()"></div>
+<button onclick="topFunction()" id="btnTop" title="Go to top">Top</button>
 
-<!-- HEADER -->
-	<div>
-	  <div class="header">
-		<img src="banner.jpg"/>
-	  </div>
-	  <div class="btn-container">
-		<div class="menu">
-			<a href="skwhite.html"><button>Spot Kids: White</button></a>
-			<a href="skblack.html"><button>Spot Kids: Black</button></a>
-		</div>
-		
+<!-- HEADER START -->
+<div class="sticky">
+	<div class="btn-container">
+		<button class="btnMenu" id="menuColor" onclick="openMenu()">Menu</button>
 		<a href="index.html"><button>Home</button></a>
 		<a href="straykids.html"><button title="Music Videos, Dance Practices and etc.">Stray Kids</button></a>
 		<a href="shows.html"><button id="highlight">Shows</button></a>
 		<a href="vlives.html"><button>V Lives</button></a>
-		<span class="menu">
-			<a href="skwhite.html"><button>Spot Kids: White</button></a>
-			<a href="skblack.html"><button>Spot Kids: Black</button></a>
+		<span class="morepage">
+			<a href="spotkids.html"><button>Spot Kids</button></a>
 		</span>
-	  </div>
+		
+		<!-- Drop Down Menu -->
+		<div class="menuList" id="menuContent" onclick="closeMenu()">
+			<h4>Navigation</h4>
+				<a href="#Stray-Kids"><button>MNET: Stray Kids</button></a>
+				<a href="#The-9th"><button>The 9th</button></a>
+				<a href="#SKZ-TALKER"><button>SKZ-TALKER</button></a>
+				<a href="#HONEY-TIPS"><button>SKZ's HONEY-TIPS</button></a>
+				<a href="#TWO-KIDS-ROOM"><button>TWO KIDS ROOM</button></a>
+				<a href="#SKZ&SKZ"><button>SKZ & SKZ</button></a>
+				<a href="#FINDING-SKZ"><button>Finding Stray Kids</button></a>
+				<a href="#CHOISKZ"><button>CHOISKZ</button></a>
+					<hr>
+				<a href="#SKZ-MC"><button>Stray Kids as MCs</button></a>
+				<a href="#More"><button>MORE</button></a>
+			<span class="morepage-menu" id="page">
+				<h4>More Pages</h4>
+				<a href="spotkids.html"><button>Spot Kids</button></a>
+				<a href="etc.html"><button>ETC</button></a>
+			</span>
+		</div>
 	</div>
-	
-	<button onclick="topFunction()" id="btnTop" title="Go to top">Top</button>
-<!-- END OF HEADER -->
+</div>
+<div class="header">
+	 <img src="banner.jpg"/>
+</div>
+<!-- HEADER END -->
 <!-- ***EVERYTHING ABOVE MUST BE IN EVERY PAGE***-->
   
   <div class="main">
     <div class="section group">
-<!-- Navigation -->	
-	<div class="sticky col span_1_of_3">
+	<div class="sticky1 col span_1_of_3">
+	  <!-- Navigation -->	
 	  <div class="box" id="nav">
-		<p>Navigation</p>
-		<a href="shows.html#Stray-Kids"><button>MNET: Stray Kids</button></a>
-	    <a href="shows.html#The-9th"><button>The 9th</button></a>
-		<a href="shows.html#SKZ-TALKER"><button>SKZ-TALKER</button></a>
-		<a href="shows.html#HONEY-TIPS"><button>SKZ's HONEY-TIPS</button></a>
-		<a href="shows.html#TWO-KIDS-ROOM"><button>TWO KIDS ROOM</button></a>
-		<a href="shows.html#SKZ&SKZ"><button>SKZ & SKZ</button></a>
-		<a href="shows.html#FINDING-SKZ"><button>Finding Stray Kids</button></a>
-		<a href="shows.html#CHOISKZ"><button>CHOISKZ</button></a>
-			<br>------------------<br>
-		<a href="shows.html#SKZ-MC"><button>Stray Kids as MCs</button></a>
-		<a href="shows.html#More"><button>MORE</button></a>
+		<h4>Navigation</h4>
+		<h5 id="showMobile" style="margin:0px; padding:5px">(you may also use navigation on 'Menu' button)</h5>
+			<a href="#Stray-Kids"><button>MNET: Stray Kids</button></a>
+			<a href="#The-9th"><button>The 9th</button></a>
+			<a href="#SKZ-TALKER"><button>SKZ-TALKER</button></a>
+			<a href="#HONEY-TIPS"><button>SKZ's HONEY-TIPS</button></a>
+			<a href="#TWO-KIDS-ROOM"><button>TWO KIDS ROOM</button></a>
+			<a href="#SKZ&SKZ"><button>SKZ & SKZ</button></a>
+			<a href="#FINDING-SKZ"><button>Finding Stray Kids</button></a>
+			<a href="#CHOISKZ"><button>CHOISKZ</button></a>
+				<hr>
+			<a href="#SKZ-MC"><button>Stray Kids as MCs</button></a>
+			<a href="#More"><button>MORE</button></a>
 	  </div>
-<!-- End of Navigation -->	
+	  <!-- End of Navigation -->	
 
-<!-- New to SKZ -->
-	<div id="open">
-		<a href="welcome.html" target="_blank"><button>Guide for New STAYs Here!</button></a>
-		<button onclick="openModal()" id="myBtn"> About This Site and Contact</button>
+	<div id="open"> 
+		<a href="welcome.html"><button>Guide for New STAYs Here!</button></a>
+		<button onclick="openModal()" id="myBtn">About This Site and Contact</button>
 	</div>
-
-<!-- ABOUT SECTION HERE -->	
-	  <div class="box smallBox" id="about" style="display:block">
-		  <p><span id="nosubs">asterisk(*)</span> = no subs <h5>I usually put * when it is not yet subbed after a long time or I'm still looking for a subbed video. Please check "Home" for subtitle update</h5></p>
-		  
-		  <!--counter-->
-			<div align=center style="display:none"><img src='https://www.counter12.com/img-9WZY12BbZbx20C3Z-15.gif' border='0' alt='conter12'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=9WZY12BbZbx20C3Z'></script></div>
-	  </div>
-<!-- END OF ABOUT -->	  
+	
+	<div class="box smallBox" id="about" style="display:block">
+		<p><span id="nosubs">asterisk(*)</span> = no subs <h5>I usually put * when it is not yet subbed after a long time or I'm still looking for a subbed video. Please check "Home" for subtitle update</h5></p>
+	</div>  
 	</div>
 
 
@@ -105,7 +121,8 @@
 		<div class="box bigBox" id="allLinks">
 			
 		<!--MNET: STRAY KIDS-->
-		<div class="secTitle" id="Stray-Kids">MNET: Stray Kids</div>
+		<span class="target" id="Stray-Kids">&nbsp;</span>
+		<div class="secTitle">MNET: Stray Kids</div>
 			<p>★Stray Kids (Survival Show) 
 			<br>Choose from these links:
 			<br><a href="http://kshow123.net/show/stray-kids/episode-1.html" target="_blank"> Kshow123 </a>
@@ -126,7 +143,8 @@
 		
 			
 		<!--The 9th-->
-		<div class="secTitle" id="The-9th">The 9th</div>
+		<span class="target" id="The-9th">&nbsp;</span>
+		<div class="secTitle">The 9th</div>
 		<h4 id="The-9th-2018">2018</h4>
 			<p> Jan 09: <a href="https://www.vlive.tv/video/54783" target="_blank"> Teaser </a> </p> 
 			<p> Jan 16: <a href="https://www.vlive.tv/video/55578" target="_blank"> Episode 1 </a> </p> 
@@ -157,7 +175,8 @@
 			
 			
 		<!-- SKZ-TALKER -->
-		<div class="secTitle" id="SKZ-TALKER">SKZ-TALKER</div>
+		<span class="target" id="SKZ-TALKER">&nbsp;</span>
+		<div class="secTitle">SKZ-TALKER</div>
 		<h5>SK-TALKER</h5>
 		<h4 id="SKZ-TALKER-2018">2018</h4>
 			<p> Mar 27: <a href="https://www.vlive.tv/video/64610" title="V LIVE" target="_blank"> Teaser </a> </p>
@@ -196,6 +215,7 @@
 			<p> Jul 02: Episode 17 <a href="https://www.vlive.tv/video/137829" target="_blank"> V LIVE</a> | <a href="https://youtu.be/dKhYUJ2vTEw" target="_blank"> YouTube </a> </p>
 			<p> Jul 10: Episode 18 <a href="https://www.vlive.tv/video/139113" target="_blank"> V LIVE</a> | <a href="https://youtu.be/QQOizCO95rY" target="_blank"> YouTube </a> </p>
 			<p> Oct 18: Episode 19 <a href="https://www.vlive.tv/video/155939" target="_blank"> V LIVE</a> | <a href="https://youtu.be/4myGwsb1BXw" target="_blank"> YouTube</a> </p>
+			<p> Oct 23: Episode 20 <a href="https://www.vlive.tv/video/156672" target="_blank"> V LIVE</a> | <a href="https://youtu.be/5v2R3iEFE5M" target="_blank"> YouTube</a> </p>
 		
 		<h5 id="SKZ-TALKER-GO">SKZ-TALKER GO!</h5>
 			<p> Feb 23: THAILAND <a href="https://www.vlive.tv/video/114553" target="_blank"> V LIVE</a> | <a href="https://youtu.be/U35ePIHz85Y" target="_blank"> YouTube </a> </p>
@@ -214,7 +234,8 @@
 			
 			
 		<!-- SKZ's HONEY-TIPS -->
-		<div class="secTitle" id="HONEY-TIPS">SKZ's HONEY-TIPS</div>
+		<span class="target" id="HONEY-TIPS">&nbsp;</span>
+		<div class="secTitle">SKZ's HONEY-TIPS</div>
 			<p> Aug 10: Teaser <a href="https://www.vlive.tv/video/84231" target="_blank"> V LIVE </a> | <a href="https://youtu.be/qUl4567Q7mw" target="_blank">YouTube</a> </p>
 			<p> Aug 17: Episode 1 <a href="https://www.vlive.tv/video/85093" target="_blank"> V LIVE </a> | <a href="https://youtu.be/IIPTQPlQ3TI" target="_blank">YouTube</a> </p>
 			<p> Aug 24: Episode 2 <a href="https://www.vlive.tv/video/86040" target="_blank"> V LIVE </a> | <a href="https://youtu.be/6F79p1TxQhs" target="_blank">YouTube</a> </p>
@@ -225,7 +246,8 @@
 			
 			
 		<!-- TWO KIDS ROOM -->
-		<div class="secTitle" id="TWO-KIDS-ROOM">TWO KIDS ROOM</div>
+		<span class="target" id="TWO-KIDS-ROOM">&nbsp;</span>
+		<div class="secTitle">TWO KIDS ROOM</div>
 			<p> Aug 11: EP01 Changbin x Hyunjin <a href="https://youtu.be/xSzaTijBZL4" target="_blank">YouTube</a> | <a href="https://www.vlive.tv/video/84303" target="_blank">V LIVE</a> </p>
 			<p> Aug 11: EP02 Lee Know x HAN <a href="https://youtu.be/QbntPEr7I9c" target="_blank">YouTube</a> | <a href="https://www.vlive.tv/video/84302" target="_blank">V LIVE</a> </p>
 			<p> Aug 18:  EP03 Bang Chan x Woojin <a href="https://youtu.be/104oU_oAqhI" target="_blank">YouTube</a> | <a href="https://www.vlive.tv/video/85179" target="_blank">V LIVE</a> </p>
@@ -281,9 +303,23 @@
 			<p> Oct 12: EP02 Hyunjin x Seungmin <a href="https://www.vlive.tv/video/154871" target="_blank">V LIVE</a> | <a href="https://youtu.be/MgFlQ9Hquz4" target="_blank"> YouTube</a> </p>
 			<p> Oct 19: EP03 Felix x I.N <a href="https://www.vlive.tv/video/156029" target="_blank">V LIVE</a> | <a href="https://youtu.be/9VUnuwyP3po" target="_blank"> YouTube</a> </p>
 			<p> Oct 19: EP04 Woojin x Changbin<a href="https://www.vlive.tv/video/156030" target="_blank"> V LIVE</a> | <a href="https://youtu.be/iIUVfaBKy98" target="_blank"> YouTube</a> </p>
+			<p> Nov 02: EP05 Lee Know x HAN<a href="https://www.vlive.tv/video/158444" target="_blank"> V LIVE</a> | <a href="https://youtu.be/a6R4mMQAngI" target="_blank"> YouTube</a> </p>
+			<p> Nov 03: EP06 Seungmin x I.N<a href="https://www.vlive.tv/video/158528" target="_blank"> V LIVE</a> | <a href="https://youtu.be/3XqaYc_goGc" target="_blank"> YouTube</a> </p>
+			<p> Nov 04: EP07 Bang Chan x Felix<a href="https://www.vlive.tv/video/158746" target="_blank"> V LIVE</a> | <a href="https://youtu.be/HiMJR4SZ2r0" target="_blank"> YouTube</a> </p>
+			<p> Nov 05: EP08 Changbin x Hyunjin<a href="https://www.vlive.tv/video/158928" target="_blank"> V LIVE</a> | <a href="https://youtu.be/3O1BIjwHrSQ" target="_blank"> YouTube</a> </p>
+			<p> Nov 06: EP09 Undisclosed Clip<a href="https://www.vlive.tv/video/159144" target="_blank"> V LIVE</a> | <a href="https://youtu.be/lVmlvYKwWxw" target="_blank"> YouTube</a> </p>
+			
+			
+			
+			
+			
+			
+			
+			
 			
 		<!-- *SKZ&SKZ* -->
-			<div class="secTitle" id="SKZ&SKZ">SKZ & SKZ</div>
+		<span class="target" id="SKZ&SKZ">&nbsp;</span>
+		<div class="secTitle">SKZ & SKZ</div>
 			<p> Oct 26: Teaser <a href="https://www.vlive.tv/video/95837" target="_blank"> V LIVE</a> | <a href="https://youtu.be/tFtCkTEgc4s" target="_blank"> YouTube </a> <span id="nosubs">*</span> </p>
 			<p> Nov 02: Episode 1 <a href="https://www.vlive.tv/video/97069" target="_blank"> V LIVE</a> | <a href="https://youtu.be/rSzqq9xbjbw" target="_blank"> YouTube </a> </p>
 			<p> Nov 09: Episode 2 <a href="https://www.vlive.tv/video/98241" target="_blank"> V LIVE</a> | <a href="https://youtu.be/bvcVzbm9kqk" target="_blank"> YouTube </a> </p>
@@ -293,7 +329,8 @@
 
 
 		<!-- FINDING STRAY KIDS -->
-			<div class="secTitle" id="FINDING-SKZ">Finding Stray Kids</div>
+		<span class="target" id="FINDING-SKZ">&nbsp;</span>
+		<div class="secTitle">Finding Stray Kids</div>
 			<p> Mar 06: <a href="https://youtu.be/DaCIjgzHvWA" target="_blank"> Teaser </a> </p>
 			<p> Mar 13: <a href="https://youtu.be/eL77r2KuGbc" target="_blank"> Episode 1 Preview </a> </p>
 			<p> Mar 20: <a href="https://www.vlive.tv/video/118914" target="_blank"> Episode 1 </a> | <a href="https://youtu.be/tP720mgbuGU" target="_blank"> Bonus Clip </a> </p>
@@ -305,7 +342,8 @@
 			<p> May 01: <a href="https://www.vlive.tv/video/125477" target="_blank"> Episode 7 </a> | <a href="https://youtu.be/4wtE5o4bUJw" target="_blank"> Bonus Clip 1 </a> | <a href="https://youtu.be/BOEaCvW1YBY" target="_blank"> Bonus Clip 2 </a> </p>
 
 		<!-- CHOISKZ -->
-			<div class="secTitle" id="CHOISKZ">CHOISKZ</div>
+		<span class="target"id="CHOISKZ">&nbsp;</span>
+		<div class="secTitle" >CHOISKZ</div>
 			<p> Jun 21: Teaser <a href="https://www.vlive.tv/video/135864" target="_blank"> V LIVE</a> | <a href="https://youtu.be/CrBZDWqlNMo" target="_blank"> YouTube </a> <span id="nosubs">*</span> </p>
 			<p> Jun 28: Episode 1 <a href="https://www.vlive.tv/video/137183" target="_blank"> V LIVE</a> | <a href="https://youtu.be/IEN8KgAIVVg" target="_blank"> YouTube </a> </p>
 			<p> Jul 05: Episode 2 <a href="https://www.vlive.tv/video/138437" target="_blank"> V LIVE</a> | <a href="https://youtu.be/rA1WcOQrGXY" target="_blank"> YouTube </a> </p>
@@ -314,12 +352,14 @@
 
 
 <!-- *NEW SECTION HERE* -->
-<!--<div class="secTitle" id="SKZ&SKZ">SKZ&SKZ</div>-->		
+<!--<span class="target" id="ID">&nbsp;</span>
+<div class="secTitle">TITLE</div>-->		
 	</div>
 	
 	<div class="box bigBox" id="allLinks">	
 		<!-- Stray Kids as MCs -->
-		<div class="secTitle" id="SKZ-MC">Stray Kids as MCs</div>	
+		<span class="target" id="SKZ-MC">&nbsp;</span>
+		<div class="secTitle">Stray Kids as MCs</div>	
 		<h4>2018</h4>
 		<p> ★ After School Club (Bang Chan special MC) <br>
 			<a href="https://youtu.be/GOaQRd9K_VI" target="_blank"> Jun 12 </a> | 
@@ -349,10 +389,11 @@
 		</p>
 		
 		<h4>2019</h4>
-		<p> ★<a href="https://ch-skz.netlify.com/etc.html#MuCore-Hyunjin">  Music Core MC Cuts (Hyunjin) </a> </p>
+		<p> ★<a href="etc.html#MuCore-Hyunjin">  Music Core MC Cuts (Hyunjin) </a> </p>
 		
-		<p id="PopsInSeoul"> ★ Pops in Seoul (Felix)
-			<br> <a href="https://ch-skz.netlify.com/etc.html#PiS-Felix"> Episodes opening and ending cut here </a>
+		<p class="target"id="PopsInSeoul"> ★ Pops in Seoul (Felix)
+			<p> <a href="etc.html#PiS-Felix"> Episodes opening and ending cut here </a></p>
+			
 			<br> Jul 02: <a href="https://youtu.be/QNPnRUzqPFE" target="_blank"> Felix's Dance How To! Stray Kids Side Effects </a> 
 			<br> Jul 04: <a href="https://youtu.be/xe98SsxmIgs" target="_blank"> The Mission for Felix to Make the Viewers Fall in Love with Him! </a>
 			<br> Jul 05: <a href="https://youtu.be/SmFWQl1n1V8" target="_blank"> What is Felix's TMI? </a>
@@ -389,10 +430,18 @@
 			<br> Oct 10: <a href="https://youtu.be/vMt-5XHWQp4" target="_blank"> Here is Felix's Handwriting! K-Pop Stars' Variety of Handwriting</a> 
 			<br> Oct 15: <a href="https://youtu.be/kmZrsR60qL0" target="_blank"> Felix's Dance How To! Stray Kids Double Knot</a>
 			<br> Oct 17: <a href="https://youtu.be/kSfqsgCLfjY" target="_blank"> The High School with Stray Kids Members As the Teachers !</a>
+			
+			<br> Oct 22: <a href="https://youtu.be/2Ks4QhLIvbs" target="_blank"> Felix's Dance How To! TEEN TEEN's 'It's on You'</a>
+			<br> Oct 24: <a href="https://youtu.be/hsyicD7DmyM" target="_blank"> K-Pop JUJEOP COMMENTS !! (feat. Felix)</a>
+			<br> Oct 29: <a href="https://youtu.be/d_cvs_BYjvs" target="_blank"> Felix's Dance How To! ONEUS's Lit</a> 
+			<br> Oct 31: <a href="https://youtu.be/Q-rvasu0mdE" target="_blank"> K-pop Idols' Halloween Costumes! (feat. Felix)</a> 
+			<br> Nov 05: <a href="https://youtu.be/qNx3PyfQoR4" target="_blank"> Felix's Dance How To! SuperM's Jopping</a>
+			<br> Nov 07: <a href="https://youtu.be/C-Qg2Xfkc7Q" target="_blank"> K-POP IDOL STARS who have dyed THEIR HAIR IN UNIQUE COLORS ! (feat. Felix)</a>
+			
 		</p>
 		<!-- MC Felix-->
 		
-		<p id="WeKpop">★ We K-pop (Seungmin) <br>
+		<p class="target" id="WeKpop">★ We K-pop (Seungmin) <br>
 			<a href="https://youtu.be/z2l1FjpC34Q" target="_blank"> 7/12: EP01 - STRAY KIDS</a>, <a href="https://youtu.be/JZ_ZWX1ODOI" target="_blank"> EXTRA </a> <br>
 			<a href="https://youtu.be/oqvnKEnVsmk" target="_blank"> 7/19: EP02 </a> | 
 			<a href="https://youtu.be/mTkqeYr2h2w" target="_blank"> 7/26: EP03 </a> |
@@ -403,14 +452,21 @@
 			<a href="https://youtu.be/lAYmV57_I7U" target="_blank"> 9/27: EP12 </a> |
 			<a href="https://youtu.be/GKB1JNwxNXM" target="_blank"> 10/04: EP13 </a> |
 			<a href="https://youtu.be/SJf7kNkmZto" target="_blank"> 10/11: EP14 </a> |
-			<a href="https://youtu.be/LEJPZfr4LrE" target="_blank"> 10/18: EP!5 </a>
+			<a href="https://youtu.be/LEJPZfr4LrE" target="_blank"> 10/18: EP15 </a> |
+			<a href="https://youtu.be/j_y7DrKfF6g" target="_blank"> 10/25: EP16 </a> |
+			<a href="https://youtu.be/qmzt7Ui3Ny4" target="_blank"> 11/01: EP17 </a> |
+			<a href="https://youtu.be/XNNYgKxlyxE" target="_blank"> 11/08: EP18 </a>
+			
+			
+			<!-- <a href="LL" target="_blank"> TITLE </a> -->
 		
 		
 		<!-- MC Seungmin-->
 		</p>
 			
 <!-- MORE -->
-<div class="secTitle" id="More">MORE</div>
+<span class="target" id="More">&nbsp;</span>
+<div class="secTitle">MORE</div>
 
 <!-- TAB -->
 <div class="tab">
@@ -482,14 +538,14 @@
 						<a href="https://youtu.be/_TxOF-MMafU" target="_blank"> Penalty Shoot Out</a> </p>
 
 			
-			<p id="Radio">★ Radio Shows (subs by StrayKSubs)
+			<p class="target" id="Radio">★ Radio Shows (subs by StrayKSubs)
 				<br> Apr 15: <a href="https://youtu.be/hn2Za_fhUA8" target="_blank"> Jung Somin's Young Street (Hyunjin, HAN, Felix, Seungmin)</a>  
 				<br> Apr 18: <a href="https://youtu.be/ZcQPdVE3VpU" target="_blank"> Sandeul's Starry Night Radio (Audio Only) </a>
 				<br> Jun 26: <a href="https://youtu.be/ylitErWsg4g" target="_blank"> MBC Dreaming Radio </a>
 				<br> Jul 04: <a href="https://youtu.be/15TYPokXtEE" target="_blank"> Sandeul's Starry Night Radio </a>
 			</p>
 			
-			<p id="Interview">★ Interviews
+			<p class="target" id="Interview">★ Interviews
 				<br> May 14: <a href="https://youtu.be/W16ie2HeXp0" target="_blank"> BUILD Series </a>
 			    <br> May 14: <a href="https://youtu.be/AY7JTNBL00o" target="_blank"> Good Day New York </a>
 			    <br> May 29: <a href="https://youtu.be/bYqGMQ64gUA" target="_blank"> iHeartRadio </a>

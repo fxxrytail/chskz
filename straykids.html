@@ -16,15 +16,20 @@
 
 
 <body>
-<!-- New to SKZ -->
-<div id="new2skz" class="modal">
-  <div class="box modalBox">
-    <span onclick="closeModal()" class="close">&times;</span>
+<!--counter-->
+<div align=center style="display:none"><img src='https://www.counter12.com/img-Bzy1x6zaxBdcwxZx-15.gif' border='0' alt='conter12'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=Bzy1x6zaxBdcwxZx'></script></div>
+<!--/counter-->
+
+<div id="modalBoxBG" class="modal" onclick="closeModal()">
+	<!-- ABOUT SECTION HERE -->	
+	<div class="box modalBox">
+		<span onclick="closeModal()" class="close">&times;</span>
 		<img src="img/skz.jpg" style="width:90%"/>
 		<p>
-		  CHANNEL SKZ is a fanmade site for compilation of links of Stray Kids' videos such as music videos, performances, shows, guestings mostly from their official sites. 
+		  CHANNEL SKZ is a fanmade site for compilation of links of Stray Kids' videos such as music videos, performances, shows, guestings mostly from their official sites. <br><br>
 		  CFs, tour promotion vids, fancams, etc. are not included in this site. 
 		  Please take note that I may not be able to put all the links here. 
+		  You may send me links that should be in this site if I missed important ones.
 		  <br><br>
 		  <a href="https://ch-skz.netlify.com/welcome">You may share this guide to new STAYs</a>
 		</p>	
@@ -33,79 +38,97 @@
 		
 		<p>Thank you and have fun watching Stray Kids! (≧▽≦)</p>
 		<p>EST.: 180821</p>
-  </div>
+	</div>
+	<!-- END OF ABOUT -->	
 </div>
+<div id="modalBG" class="modal" onclick="closeMenu()"></div>
+<button onclick="topFunction()" id="btnTop" title="Go to top">Top</button>
 
-<!-- HEADER -->
-	<div>
-	  <div class="header">
-		<img src="banner.jpg"/>
-	  </div>
-	  <div class="btn-container">
-		<div class="menu">
-			<a href="skwhite.html"><button>Spot Kids: White</button></a>
-			<a href="skblack.html"><button>Spot Kids: Black</button></a>
-		</div>
-		
+<!-- HEADER START -->
+<div class="sticky">
+	<div class="btn-container">
+		<button class="btnMenu" id="menuColor" onclick="openMenu()">Menu</button>
 		<a href="index.html"><button>Home</button></a>
-		<a href="straykids.html"><button  id="highlight" title="Music Videos, Dance Practices and etc.">Stray Kids</button></a>
+		<a href="straykids.html"><button id="highlight" title="Music Videos, Dance Practices and etc.">Stray Kids</button></a>
 		<a href="shows.html"><button>Shows</button></a>
 		<a href="vlives.html"><button>V Lives</button></a>
-		<span class="menu">
-			<a href="skwhite.html"><button>Spot Kids: White</button></a>
-			<a href="skblack.html"><button>Spot Kids: Black</button></a>
+		<span class="morepage">
+			<a href="spotkids.html"><button>Spot Kids</button></a>
 		</span>
 		
-	  </div>
+		<!-- Drop Down Menu -->
+		<div class="menuList" id="menuContent" onclick="closeMenu()">
+				<h4>Navigation</h4>
+					<a href="#MVs"><button>M/V & Performance Videos</button></a>
+					<a href="#SKZ-PLAYER"><button>SKZ-PLAYER</button></a>
+					<a href="#Dance-Practice"><button>Dance Practice</button></a>
+					<a href="#Fan-Guide"><button>Fan Featuring Guide</button></a>
+					<a href="#Live-Perf"><button>Live Performances</button></a>
+						<hr>
+					<a href="#INTRO"><button>Album Intro</button></a>
+					<a href="#Pre-Debut"><button>Pre-Debut</button></a>
+					<a href="#I-am-NOT"><button>I am NOT</button></a>
+					<a href="#I-am-WHO"><button>I am WHO</button></a>
+					<a href="#I-am-YOU"><button>I am YOU</button></a>
+					<a href="#MIROH"><button>MIROH</button></a>
+					<a href="#Yellow-Wood"><button>Yellow Wood</button></a>
+					<a href="#Double-Knot"><button>Double Knot</button></a>
+					<a href="#Astronaut"><button>Astronaut</button></a>
+						<hr>
+					<a href="#MoreSKZ"><button>More Music With Stray Kids</button></a>
+			<span class="morepage-menu" id="page">
+				<h4>More Pages</h4>
+				<a href="spotkids.html"><button>Spot Kids</button></a>
+				<a href="etc.html"><button>ETC</button></a>
+			</span>
+		</div>
 	</div>
-	
-	<button onclick="topFunction()" id="btnTop" title="Go to top">Top</button>
+</div>
+<div class="header">
+	 <img src="banner.jpg"/>
+</div>
 <!-- END OF HEADER -->
 <!-- ***EVERYTHING ABOVE MUST BE IN EVERY PAGE***-->
   
   <div class="main">
     <div class="section group">
-<!-- Navigation -->	
-	<div class="sticky col span_1_of_3">
+
+	<div class="sticky1 col span_1_of_3">
+		<!-- Navigation -->
 		<div class="box" id="nav">
-			<p>Navigation</p>
-			<a href="straykids.html#MVs"><button>M/V & Performance Videos</button></a>
-			<a href="straykids.html#SKZ-PLAYER"><button>SKZ-PLAYER</button></a>
-			<a href="straykids.html#Dance-Practice"><button>Dance Practice</button></a>
-			<a href="straykids.html#Fan-Guide"><button>Fan Featuring Guide</button></a>
-			<a href="straykids.html#Live-Perf"><button>Live Performances</button></a>
-				<br>------------------<br>
-			<a href="straykids.html#INTRO"><button>Album Intro</button></a>
-			<a href="straykids.html#Pre-Debut"><button>Pre-Debut</button></a>
-			<a href="straykids.html#I-am-NOT"><button>I am NOT</button></a>
-			<a href="straykids.html#I-am-WHO"><button>I am WHO</button></a>
-			<a href="straykids.html#I-am-YOU"><button>I am YOU</button></a>
-			<a href="straykids.html#MIROH"><button>MIROH</button></a>
-			<a href="straykids.html#Yellow-Wood"><button>Yellow Wood</button></a>
-			<a href="straykids.html#Double-Knot"><button>Double Knot</button></a>
-				<br>------------------<br>
-			<a href="straykids#MoreSKZ"><button>More Music With Stray Kids</button></a>
+			<h4>Navigation</h4>
+			<h5 id="showMobile" style="margin:0px; padding:5px">(you may also use navigation on 'Menu' button)</h5>
+			<a href="#MVs"><button>M/V & Performance Videos</button></a>
+			<a href="#SKZ-PLAYER"><button>SKZ-PLAYER</button></a>
+			<a href="#Dance-Practice"><button>Dance Practice</button></a>
+			<a href="#Fan-Guide"><button> Fan Featuring Guide </button></a>
+			<a href="#Live-Perf"><button> Live Performances </button></a>
+				<hr>
+			<a href="#INTRO"><button>Album Intro</button></a>
+			<a href="#Pre-Debut"><button>Pre-Debut</button></a>
+			<a href="#I-am-NOT"><button>I am NOT</button></a>
+			<a href="#I-am-WHO"><button>I am WHO</button></a>
+			<a href="#I-am-YOU"><button>I am YOU</button></a>
+			<a href="#MIROH"><button>MIROH</button></a>
+			<a href="#Yellow-Wood"><button>Yellow Wood</button></a>
+			<a href="#Double-Knot"><button>Double Knot</button></a>
+			<a href="#Astronaut"><button>Astronaut</button></a>
+				<hr>
+			<a href="#MoreSKZ"><button>More Music With Stray Kids</button></a>
 		</div>
-	
-<!-- End of Navigation -->	
+		<!-- End of Navigation -->	
 
 
-<!-- ABOUT SECTION HERE -->	
-	<div id="open">
-		<a href="welcome.html" target="_blank"><button>Guide for New STAYs Here!</button></a>
-		<button onclick="openModal()" id="myBtn"> About This Site and Contact</button>
-	</div>
-	  <div class="box smallBox" id="about" style="display:block">
-		<p><a href="https://twitter.com/dskz9/status/1095941137578115073?s=19" target="_blank"> Thread of Stray Kids Awards Speech</a><p>
+		<div id="open"> 
+			<a href="welcome.html"><button>Guide for New STAYs Here!</button></a>
+			<button onclick="openModal()" id="myBtn">About This Site and Contact</button>
+		</div>
 		
-		  <p><span id="nosubs">asterisk(*)</span> = fan uploaded / fan cam
-		  <br> Date on Live Performance is the event's date</p>
-		  
-		  <!--counter-->
-			<div align=center style="display:none"><img src='https://www.counter12.com/img-6xA0YA6DD78Cw1Zw-15.gif' border='0' alt='free web counter'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=6xA0YA6DD78Cw1Zw'></script></div>
-			
-	  </div>
-<!-- END OF ABOUT -->
+		<div class="box smallBox" id="about" style="display:block">
+			<p>Click to go to:
+			<span id="tag"><a>[TAG]</a></span> <a>Video Link</a></p>
+			<p id="wait">Gray means still waiting for link/reupload </p>
+		</div>
 	</div>
 
 <!-- LINKS SECTION HERE -->
@@ -113,7 +136,8 @@
 		<div class="box bigBox" id="allLinks">
 		
 		    <!-- M/V & Performance Videos -->
-		    <div class="secTitle" id="MVs">M/V & Performance Videos</div>
+			<span class="target" id="MVs">&nbsp;</span>
+		    <div class="secTitle" >M/V & Performance Videos</div>
 		<h4 id="MVs-2017">2017</h4>
 			<p> Oct 06: <a href="https://youtu.be/AdfIfFGCqgo" target="_blank"> "Hellevator" M/V </a> </p> 
 			<p> Nov 01: <a href="https://www.vlive.tv/video/46525" target="_blank"> "Hellevator" Performance Video </a> </p>
@@ -163,7 +187,8 @@
 			
 		
 			<!-- SKZ-PLAYER -->
-		    <div class="secTitle" id="SKZ-PLAYER">SKZ-PLAYER</div>
+			<span class="target" id="SKZ-PLAYER">&nbsp;</span>
+			<div class="secTitle" >SKZ-PLAYER</div>
 		<h4>2018</h4>
 			<p> Aug 26: <a href="https://youtu.be/XJNP9l6k688" title="YouTube" target="_blank"> Lee Know x Hyunjin x Felix </a> </p>
 			<p> Sep 02: <a href="https://youtu.be/-NioJcfMzT0" title="YouTube" target="_blank"> Woojin x Seungmin x I.N </a> </p>
@@ -174,7 +199,8 @@
 		
 			
 			<!-- Dance Practice -->
-			<div class="secTitle" id="Dance-Practice">Dance Practice</div>
+			<span class="target" id="Dance-Practice">&nbsp;</span>
+			<div class="secTitle">Dance Practice</div>
 			<p> Dec 20: <a href="https://www.vlive.tv/video/52724" target="_blank"> Hellevator </a> </p>
 		<h4 id="Dance-Practice-2018">2018</h4>
 			<p> Feb 20: <a href="https://youtu.be/qfbEDtYuaEA" target="_blank"> Grrr Law of Total Madness </a> </p> 
@@ -201,7 +227,8 @@
 			
 			
 			<!-- Fan Featuring Guide -->
-			<div class="secTitle" id="Fan-Guide">Fan Featuring Guide</div>
+			<span class="target" id="Fan-Guide">&nbsp;</span>
+			<div class="secTitle">Fan Featuring Guide</div>
 			<h4 id="Fan-Guide-2018">2018</h4>
 			<p> Mar 07: <a href="https://youtu.be/bxdr2gtr1sQ" target="_blank"> YAYAYA </a> </p> 
 			<p> Mar 08: <a href="https://youtu.be/k2kqVG8XZiY" target="_blank"> Grrr Law of Total Madness </a> </p> 
@@ -216,7 +243,8 @@
 
 			
 			<!-- Live Performances -->
-			<div class="secTitle" id="Live-Perf">Live Performances</div>
+			<span class="target" id="Live-Perf">&nbsp;</span>
+			<div class="secTitle">Live Performances</div>
 			<h5>Music Show Stages Playlists by StrayKSubs</h5>
 			<h4 id="Promotion-2018">2018</h4>
 			<p> ★ <a href="https://www.youtube.com/watch?v=cWQ1KL5GBxU&list=PL45hWqrY6jaHiDRS6GegDIr-oEXIbwRnJ" target="_blank"> I am NOT! </a> 
@@ -224,8 +252,8 @@
 			★ <a href="https://www.youtube.com/watch?v=HJ1JNnyRRrg&list=PL45hWqrY6jaHhlnSN1MMveCyTX3Mk5v_k" target="_blank"> I am YOU. </a> ★ </p>
 			<h4 id="Promotion-2019">2019</h4>
 			<p> ★ <a href="https://www.youtube.com/watch?v=DTdSjh0J0v0&list=PL45hWqrY6jaEWu3t5C8enw2JuOik2jOs6" target="_blank"> Clé 1: MIROH  </a> 
-			★ <a href="https://www.youtube.com/playlist?list=PL45hWqrY6jaG3t2P4VLEwNzNbEJpR8EDQ" target="_blank"> Clé 2 : Yellow Wood </a> 
-			★ <a href="https://www.youtube.com/playlist?list=PL45hWqrY6jaFtYSzbWKNFgCH3ENe2N0jQ" target="_blank"> Double Knot </a> 
+			★ <a href="https://www.youtube.com/watch?v=rVHVuQYFWfc&list=PL45hWqrY6jaG3t2P4VLEwNzNbEJpR8EDQ" target="_blank"> Clé 2 : Yellow Wood </a> 
+			★ <a href="https://www.youtube.com/watch?v=WBLGc95I3o8&list=PL45hWqrY6jaFtYSzbWKNFgCH3ENe2N0jQ" target="_blank"> Double Knot </a> 
 			</p>
 			
 <h5>More Live Performances</h5>
@@ -352,7 +380,8 @@
 		<!-- NEW BIGBOX -->
 		<div class="box bigBox" id="allLinks">	
 			<!-- Album Intro -->
-			<div class="secTitle" id="INTRO">Album Intro</div>
+			<span class="target" id="INTRO">&nbsp;</span>
+			<div class="secTitle">Album Intro</div>
 			<p> Mar 13: <a href="https://www.vlive.tv/video/62794" title="VLIVE" target="_blank"> INTRO: I am NOT EP.01 </a></p>
 			<p> Mar 20: <a href="https://www.vlive.tv/video/63709" title="VLIVE" target="_blank"> INTRO: I am NOT EP.02 </a></p>
 			<p> Jul 24: <a href="https://youtu.be/zaewsNubRY0" target="_blank"> INTRO: I am WHO EP.01 </a></p>
@@ -362,7 +391,8 @@
 			<p> Jun 13: <a href="https://youtu.be/XS5M5is76iw" target="_blank"> INTRO "Clé 2 : Yellow Wood" </a> </p>
 			
 			<!-- Pre-Debut -->
-			<div class="secTitle" id="Pre-Debut">Pre-Debut & MIXTAPE</div>
+			<span class="target"id="Pre-Debut">&nbsp;</span>
+			<div class="secTitle" >Pre-Debut & MIXTAPE</div>
 			<p> Sep 26: <a href="https://youtu.be/WzGCuoa6K98" target="_blank"> Hellevator Teaser Video </a> </p>
 			<p> Oct 18: <a href="https://www.vlive.tv/video/44734" target="_blank"> 3RACHA "Runners High" Stage </a> </p>
 			<p> Nov 02: <a href="https://www.vlive.tv/video/46642" target="_blank"> "Hellevator" M/V Behind </a> </p>
@@ -372,7 +402,8 @@
 			<p> Jan 11: <a href="https://youtu.be/eOCftvjJWKU" target="_blank"> "Young Wings" Performance Video Teaser </a> </p>
 			
 			<!-- I am NOT -->
-			<div class="secTitle" id="I-am-NOT"> Op.01: I am NOT</div>
+			<span class="target" id="I-am-NOT">&nbsp;</span>
+			<div class="secTitle"> Op.01: I am NOT</div>
 			<p> Mar 05: <a href="https://youtu.be/x_oHzyRUvC0" target="_blank"> "I am NOT" Trailer </a> </p>
 			<p> Mar 22: <a href="https://youtu.be/HgiOapgCoHI" target="_blank"> "District 9" Teaser Video 1 </a> </p>
 			<p> Mar 23: <a href="https://youtu.be/0Tgh80_-C8c" target="_blank"> "District 9" Teaser Video 2 </a> </p>
@@ -382,7 +413,8 @@
 			
 			
 			<!-- I am WHO -->
-			<div class="secTitle" id="I-am-WHO"> Op.02: I am WHO</div>
+			<span class="target" id="I-am-WHO">&nbsp;</span>
+			<div class="secTitle"> Op.02: I am WHO</div>
 			<p> Aug 01: <a href="https://youtu.be/hVsG4XhKbYw" title="YouTube" target="_blank"> FANDOM NAME "STAY" </a> </p>
 			<p> Aug 02: <a href="https://youtu.be/7912sixDduE" target="_blank"> "My Pace" Teaser Video 1 </a> </p>
 			<p> Aug 03: <a href="https://youtu.be/eOlyg96yYZ4" target="_blank"> "My Pace" Teaser Video 2 </a> </p>
@@ -405,7 +437,8 @@
 			</p>
 			
 			<!-- I am YOU -->
-			<div class="secTitle" id="I-am-YOU"> Op.03: I am YOU</div>
+			<span class="target" id="I-am-YOU">&nbsp;</span>
+			<div class="secTitle"> Op.03: I am YOU</div>
 			<p> Oct 18: <a href="https://youtu.be/iEuXFibUjB4" target="_blank"> "I am YOU" Teaser Video 1 </a> </p>
 			<p> Oct 19: <a href="https://youtu.be/JLOWeonvi5A" target="_blank"> "I am YOU" Teaser Video 2 </a> </p>		
 			<p> Oct 22: <a href="https://www.vlive.tv/video/95021" target="_blank"> UNVEIL [Op. 03 : I am YOU] Highlight Clip #1 "I am YOU" </a> </p>
@@ -424,7 +457,8 @@
 			
 			
 			<!-- MIROH -->
-			<div class="secTitle" id="MIROH"> CLÉ 1: MIROH</div>
+			<span class="target" id="MIROH">&nbsp;</span>
+			<div class="secTitle"> CLÉ 1: MIROH</div>
 			<p> Mar 06: <a href="https://youtu.be/EcuYZI-Qv-0" target="_blank"> Stray Kids "20190325" </a> </p>
 			<p> Mar 07: <a href="https://youtu.be/xH3CEcSojbg" target="_blank"> 'Clé 1 : MIROH' UNVEIL Teaser </a> </p>
 			<p> Mar 18: <a href="https://youtu.be/LdOT4dsbldQ" target="_blank"> UNVEIL : TRACK "Maze of Memories"</a> </p>
@@ -450,7 +484,8 @@
 
 			
 			<!-- Yellow Wood -->
-			<div class="secTitle" id="Yellow-Wood">CLÉ 2: Yellow Wood</div>
+			<span class="target" id="Yellow-Wood">&nbsp;</span>
+			<div class="secTitle">CLÉ 2: Yellow Wood</div>
 			<p> Jun 04: <a href="https://youtu.be/R9N3xm3af7w" target="_blank"> "Clé 2 : Yellow Wood" Trailer </a> </p>
 			<p> Jun 12: <a href="https://youtu.be/ZIq15XrgTe8" target="_blank"> "Clé 2: Yellow Wood" CH.SKZ Teaser Video</a> </p>
 			<p> Jun 14: <a href="https://youtu.be/zRyQ9rha8gM" target="_blank"> UNVEIL : TRACK "Mixtape Spin-off" </a> </p>
@@ -467,14 +502,24 @@
 			<p> Aug 01: <a href="https://www.vlive.tv/video/142725" target="_blank"> STAY 1st Anniversary Special Video for STAY #1</a> | <a href="https://www.vlive.tv/video/142726" target="_blank"> #2</a> | <a href="https://www.vlive.tv/video/142727" target="_blank"> #3</a></p>
 			<p> Sep 01: <a href="https://youtu.be/RlLUsd6R5pk" target="_blank"> Stray Kids "UNVEIL TOUR in Europe" </a> </p>
 			
-			<!-- Double Knot-->
-			<div class="secTitle" id="Double-Knot">Double Knot (Single)</div>
+		<!-- Double Knot-->
+		<span class="target" id="Double-Knot">&nbsp;</span>
+		<div class="secTitle">Double Knot (Single)</div>
 			<p> Sep 30: <a href="https://youtu.be/MOtJvdmNcLM" target="_blank"> THE FINAL PIECE 2019</a> </p>
 			<p> Oct 01: <a href="https://youtu.be/aBhvDSIybnw" target="_blank"> "Double Knot" Prologue Video</a> </p>
 			<p> Oct 02: <a href="https://youtu.be/Nzu3HFhw4xY" target="_blank"> "Double Knot" M/V Teaser</a> </p>
 			<p> Oct 08: <a href="https://youtu.be/Gmeu4mBV2lU" target="_blank"> "Double Knot" Dance Practice Teaser</a> </p>
 			<p> Oct 09: <a href="https://youtu.be/G_W29axXaNU" target="_blank"> Double Knot full (Weekly Idol)</a> </p>
 			<p> Oct 09: <a href="https://www.vlive.tv/video/154093" target="_blank"> Stray Kids x VANILLA STAGE Full</a> | <a href="https://www.vlive.tv/video/154671" target="_blank"> Double Knot</a> | <a href="https://www.vlive.tv/video/154670" target="_blank"> MIROH</a></p>
+			<p> Oct 20: <a href="https://youtu.be/bL11CeL1830" target="_blank"> Studio Choom: Double Knot</a> </p>
+			<p> Oct 21: <a href="https://youtu.be/tWdfj1BFET0" target="_blank"> Knock Knock Knock: Stray Kids MIROH, Boxer, Double Knot</a> </p>
+			<p> Oct 25: <a href="https://youtu.be/O_1RXJiNXZY" target="_blank">Knock Knock Knock: Behind</a> </p>
+			
+			
+		<!-- Astronaut -->
+		<span class="target" id="Astronaut">&nbsp;</span>
+		<div class="secTitle">Astronaut</div>
+			<p> Nov 09: <a href="https://youtu.be/A2USiWmLQEE" target="_blank"> "Astronaut" Propogue Video</a> </p>
 			
 		
 		
@@ -491,15 +536,19 @@
 		
 		
 		<!-- *NEW SECTION HERE* -->
-		<!--<div class="secTitle" id="ID">I am WHO</div>
-			<p> DATE <a href="LINK" target="_blank"> TITLE </a> </p> -->
+		<!--<span class="target" id="ID">&nbsp;</span>
+			<div class="secTitle">TITLE</div> -->
 		</div>	
  		<div class="box bigBox" id="allLinks">	
 			<!-- More Music With Stray Kids -->
-			<div class="secTitle" id="MoreSKZ">More Music With Stray Kids</div>
-			<p> Feb 20: <a href="https://open.spotify.com/track/5nwj3GrorH7s1oaSlVleeD" target="_blank"> Yoon Jisung ft. Changbin - You... Like the Wind </a> | <br> Feb 20: <a href="https://youtu.be/IPytf_dOC_E" target="_blank"> Changbin's Recording (With Bang Chan and Yoon Jisung) </a> <span id="subs"> subs by: StrayKSubs </p>
-			<p> Feb 22: <a href="https://youtu.be/JF2rQm5Qpks" target="_blank"> Stray Kids - IVY with U </a> </p>
-			<p> Apr 12: 3RACHA helped in composing  <a href="https://open.spotify.com/track/23ynWu7ePo3gE2CLXaUjSn?si=1InDrEpWSg6NQ1a9HrRpBw" target="_blank"> 我的世代 (New Era) by Show Luo </a> </p>
+			<span class="target" id="MoreSKZ">&nbsp;</span>
+			<div class="secTitle">More Music With Stray Kids</div>
+			<h4>2019</h4>
+				<p> Feb 20: <a href="https://open.spotify.com/track/5nwj3GrorH7s1oaSlVleeD" target="_blank"> Yoon Jisung ft. Changbin - You... Like the Wind </a> | <br> Feb 20: <a href="https://youtu.be/IPytf_dOC_E" target="_blank"> Changbin's Recording (With Bang Chan and Yoon Jisung) </a> <span id="subs"> subs by: StrayKSubs </p>
+				<p> Feb 22: <a href="https://youtu.be/JF2rQm5Qpks" target="_blank"> Stray Kids - IVY with U </a> </p>
+				<p> Apr 12: 3RACHA helped in composing  <a href="https://open.spotify.com/track/23ynWu7ePo3gE2CLXaUjSn?si=1InDrEpWSg6NQ1a9HrRpBw" target="_blank"> 我的世代 (New Era) by Show Luo </a> </p>
+				<p> Nov 07: <a href="https://open.spotify.com/track/0KHCa8hM5Jff6Ji0JxQYMb" target="_blank"> Stray Kids - 끝나지 않을 이야기 (A Never Ending Story)</a> (Extraordinary You OST) </p>
+				
 		</div>	
 		  
 	</div>

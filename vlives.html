@@ -16,15 +16,21 @@
 
 
 <body>
-<!-- New to SKZ -->
-<div id="new2skz" class="modal">
-  <div class="box modalBox">
-    <span onclick="closeModal()" class="close">&times;</span>
+<!--counter-->
+<div align=center style="display:none"><img src='https://www.counter12.com/img-a800BwaZ0Z432y25-15.gif' border='0' alt='free web counter'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=a800BwaZ0Z432y25'></script></div>
+<!--/counter-->
+
+
+<div id="modalBoxBG" class="modal" onclick="closeModal()">
+	<!-- ABOUT SECTION HERE -->	
+	<div class="box modalBox">
+		<span onclick="closeModal()" class="close">&times;</span>
 		<img src="img/skz.jpg" style="width:90%"/>
 		<p>
-		  CHANNEL SKZ is a fanmade site for compilation of links of Stray Kids' videos such as music videos, performances, shows, guestings mostly from their official sites. 
+		  CHANNEL SKZ is a fanmade site for compilation of links of Stray Kids' videos such as music videos, performances, shows, guestings mostly from their official sites. <br><br>
 		  CFs, tour promotion vids, fancams, etc. are not included in this site. 
 		  Please take note that I may not be able to put all the links here. 
+		  You may send me links that should be in this site if I missed important ones.
 		  <br><br>
 		  <a href="https://ch-skz.netlify.com/welcome">You may share this guide to new STAYs</a>
 		</p>	
@@ -33,70 +39,116 @@
 		
 		<p>Thank you and have fun watching Stray Kids! (≧▽≦)</p>
 		<p>EST.: 180821</p>
-  </div>
+	</div>
+	<!-- END OF ABOUT -->	
 </div>
-
-<!-- HEADER -->
-	<div>
-	  <div class="header">
-		<img src="banner.jpg"/>
-	  </div>
-	  <div class="btn-container">
-		<div class="menu">
-			<a href="skwhite.html"><button>Spot Kids: White</button></a>
-			<a href="skblack.html"><button>Spot Kids: Black</button></a>
-		</div>
-		
+<div id="modalBG" class="modal" onclick="closeMenu()"></div>
+<button onclick="topFunction()" id="btnTop" title="Go to top">Top</button>
+	
+<!-- HEADER START -->
+<div class="sticky">
+	<div class="btn-container">
+		<button class="btnMenu" id="menuColor" onclick="openMenu()">Menu</button>
 		<a href="index.html"><button>Home</button></a>
 		<a href="straykids.html"><button title="Music Videos, Dance Practices and etc.">Stray Kids</button></a>
 		<a href="shows.html"><button>Shows</button></a>
 		<a href="vlives.html"><button id="highlight">V Lives</button></a>
-		<span class="menu">
-			<a href="skwhite.html"><button>Spot Kids: White</button></a>
-			<a href="skblack.html"><button>Spot Kids: Black</button></a>
+		<span class="morepage">
+			<a href="spotkids.html"><button>Spot Kids</button></a>
 		</span>
 		
-	  </div>
+		<!-- Drop Down Menu -->
+		<div class="menuList" id="menuContent" onclick="closeMenu()">
+			<h4>Year</h4>
+			<a href="#Year"><button onclick="openTabb(event, 'Y19', 'tc1', 'tb1', 'YB19')">2019</button></a>
+			<a href="#Year"><button onclick="openTabb(event, 'Y18', 'tc1', 'tb1', 'YB18')">2018</button></a>
+			<a href="#Year"><button onclick="openTabb(event, 'Y17', 'tc1', 'tb1', 'YB17')">2017</button></a>	
+				
+			<h4>Member</h4>
+			<a href="#Member"><button class="tb2 tablinks active" onclick="openTabb(event, 'M1', 'tc2', 'tb2', 'MB1')">Bang Chan</button></a>
+			<a href="#Member"><button class="tb2 tablinks" onclick="openTabb(event, 'M2', 'tc2', 'tb2', 'MB2')">Woojin</button></a>
+			<a href="#Member"><button class="tb2 tablinks" onclick="openTabb(event, 'M3', 'tc2', 'tb2', 'MB3')">Lee Know</button></a>
+			<a href="#Member"><button class="tb2 tablinks" onclick="openTabb(event, 'M4', 'tc2', 'tb2', 'MB4')">Changbin</button></a>
+			<a href="#Member"><button class="tb2 tablinks" onclick="openTabb(event, 'M5', 'tc2', 'tb2', 'MB5')">Hyunjin</button></a>
+			<a href="#Member"><button class="tb2 tablinks" onclick="openTabb(event, 'M6', 'tc2', 'tb2', 'MB6')">HAN</button></a>
+			<a href="#Member"><button class="tb2 tablinks" onclick="openTabb(event, 'M7', 'tc2', 'tb2', 'MB7')">Felix</button></a>
+			<a href="#Member"><button class="tb2 tablinks" onclick="openTabb(event, 'M8', 'tc2', 'tb2', 'MB8')">Seungmin</button></a>
+			<a href="#Member"><button class="tb2 tablinks" onclick="openTabb(event, 'M9', 'tc2', 'tb2', 'MB9')">I.N</button></a>
+				
+			<h4>Series Title</h4>
+			<a href="#Series"><button class="tb3 tablinks active" onclick="openTabb(event, 'M10', 'tc3', 'tb3', 'MB10')">Sunday Kids</button></a>
+			<a href="#Series"><button class="tb3 tablinks" onclick="openTabb(event, 'M11', 'tc3', 'tb3', 'MB11')">DaengNyang School</button></a>
+			<span class="morepage-menu" id="page">
+				<h4>More Pages</h4>
+				<a href="spotkids.html"><button>Spot Kids</button></a>
+				<a href="etc.html"><button>ETC</button></a>
+			</span>
+		</div>
 	</div>
-	
-	<button onclick="topFunction()" id="btnTop" title="Go to top">Top</button>
-<!-- END OF HEADER -->
+</div>
+<div class="header">
+	 <img src="banner.jpg"/>
+</div>
+<!-- HEADER END -->
 <!-- ***EVERYTHING ABOVE MUST BE IN EVERY PAGE***-->
   
   <div class="main">
     <div class="section group">
-<!-- Navigation -->
-	<div class="sticky col span_1_of_3">
-	  <div class="box" id="nav">
-		<p>Navigation</p>
-	    <a href="vlives.html#2019"><button>2019</button></a>
-		<a href="vlives.html#2018"><button>2018</button></a>
-		<a href="vlives.html#2017"><button>2017</button></a>
-	  </div>
-<!-- End of Navigation -->	
+		<div class="sticky1 col span_1_of_3">
+		  <!-- Navigation -->
+		  <div class="box" id="nav">
+			<h4>Navigation</h4>
+			<p>Year</p>
+			<a href="#Year"><button onclick="openTabb(event, 'Y19', 'tc1', 'tb1', 'YB19')">2019</button></a>
+			<a href="#Year"><button onclick="openTabb(event, 'Y18', 'tc1', 'tb1', 'YB18')">2018</button></a>
+			<a href="#Year"><button onclick="openTabb(event, 'Y17', 'tc1', 'tb1', 'YB17')">2017</button></a>	
+				<hr>
+				
+			<p>Member</p>
+			<a href="#Member"><button class="tb2 tablinks active" onclick="openTabb(event, 'M1', 'tc2', 'tb2', 'MB1')">Bang Chan</button></a>
+			<a href="#Member"><button class="tb2 tablinks" onclick="openTabb(event, 'M2', 'tc2', 'tb2', 'MB2')">Woojin</button></a>
+			<a href="#Member"><button class="tb2 tablinks" onclick="openTabb(event, 'M3', 'tc2', 'tb2', 'MB3')">Lee Know</button></a>
+			<a href="#Member"><button class="tb2 tablinks" onclick="openTabb(event, 'M4', 'tc2', 'tb2', 'MB4')">Changbin</button></a>
+			<a href="#Member"><button class="tb2 tablinks" onclick="openTabb(event, 'M5', 'tc2', 'tb2', 'MB5')">Hyunjin</button></a>
+			<a href="#Member"><button class="tb2 tablinks" onclick="openTabb(event, 'M6', 'tc2', 'tb2', 'MB6')">HAN</button></a>
+			<a href="#Member"><button class="tb2 tablinks" onclick="openTabb(event, 'M7', 'tc2', 'tb2', 'MB7')">Felix</button></a>
+			<a href="#Member"><button class="tb2 tablinks" onclick="openTabb(event, 'M8', 'tc2', 'tb2', 'MB8')">Seungmin</button></a>
+			<a href="#Member"><button class="tb2 tablinks" onclick="openTabb(event, 'M9', 'tc2', 'tb2', 'MB9')">I.N</button></a>
+				<hr>
+				
+			<p>Series Title</p>
+			<a href="#Series"><button class="tb3 tablinks active" onclick="openTabb(event, 'M10', 'tc3', 'tb3', 'MB10')">Sunday Kids</button></a>
+			<a href="#Series"><button class="tb3 tablinks" onclick="openTabb(event, 'M11', 'tc3', 'tb3', 'MB11')">DaengNyang School</button></a>
+		  </div>
+		<!-- End of Navigation -->	
 
 
-<!-- ABOUT SECTION HERE -->
-	<div id="open">
-		<a href="welcome.html" target="_blank"><button>Guide for New STAYs Here!</button></a>
-		<button onclick="openModal()" id="myBtn"> About This Site and Contact</button>
-	</div>
-	  <div class="box smallBox" id="about" style="display:block">
-		<p><h5>(V LIVEs sorted by Sunday Kids and Solo Lives soon!)</h5></p>
-		  
-		  <!--counter-->
-			<div align=center style="display:none"><img src='https://www.counter12.com/img-a800BwaZ0Z432y25-15.gif' border='0' alt='free web counter'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=a800BwaZ0Z432y25'></script></div>
-	  </div>
-<!-- END OF ABOUT -->	  
+		<div id="open"> 
+			<a href="welcome.html"><button>Guide for New STAYs Here!</button></a>
+			<button onclick="openModal()" id="myBtn">About This Site and Contact</button>
+		</div>
+		
+		<!-- ABOUT SECTION HERE -->	
+		<div class="box smallBox" id="about" style="display:block">
+			<p><h5>Some titles may not be the translation of original title. Fanship V LIVEs not included. V LIVES sorted by members and series title will be updated every month.</h5></p>
+		</div>
+		<!-- END OF ABOUT -->	  
 	</div>
 
 
 <!-- LINKS SECTION HERE -->
-	<div class="col span_2_of_3">
-		<div class="box bigBox" id="allLinks">
+<div class="col span_2_of_3">
+	<div class="box bigBox" id="allLinks">
 		
-		<h5 id="2019">NOTE: Titles here may not be the translation of original title. I can't link CH+ lives for Fanship members *sad emoticon*</h5>
-		<div class="secTitle" >2019</div>
+		<span class="target" id="Year">&nbsp;</span>
+		<div class="secTitle" >By Year</div>
+		<div class="tab">
+			<button id="YB19" class="tb1 tablinks active" onclick="openTab(event, 'Y19', 'tc1', 'tb1')">2019</button>
+			<button id="YB18" class="tb1 tablinks" onclick="openTab(event, 'Y18', 'tc1', 'tb1')">2018</button>
+			<button id="YB17" class="tb1 tablinks" onclick="openTab(event, 'Y17', 'tc1', 'tb1')">2017</button>
+
+		</div>
+		<div id="Y19" class="tc1 tabcontent" style="display:block">
 			<p> Jan 01: <a href="https://www.vlive.tv/video/107058" target="_blank"> First live for 2019 </a> </p>
 			<p> Jan 02: <a href="https://www.vlive.tv/video/107284" target="_blank"> Chan's Room </a> </p>
 			<p> Jan 03: <a href="https://www.vlive.tv/video/107334" target="_blank"> Dog and Cat School </a> </p>
@@ -282,26 +334,32 @@
 			<p> Oct 09: <a href="https://www.vlive.tv/video/154298" target="_blank"> See you soon STAY</a> </p>
 			<p> Oct 12: <a href="https://www.vlive.tv/video/154882" target="_blank"> Thank you for today, STAY </a> </p>
 			<p> Oct 13: <a href="https://www.vlive.tv/video/154962" target="_blank"> Chan's Room EP41</a> </p>
-				<p> Oct 19: <a href="https://www.vlive.tv/video/156037" target="_blank"> I.N's Hometown Again!</a> </p>
+			<p> Oct 19: <a href="https://www.vlive.tv/video/156037" target="_blank"> We're in I.N's Hometown Again!</a> </p>
+			<p> Oct 20: <a href="https://www.vlive.tv/video/156129" target="_blank"> Chan's Room EP42</a> </p>
+		<br><p> Nov 07: <a href="https://www.vlive.tv/video/159266" target="_blank"> Chan's Room EP43</a> </p>
+				
+				
+				
+				
+				
 			
-			
-			
-			<!-- Latest -->
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-		<div class="secTitle" id="2018">2018</div>
+				
+				
+				<!-- Latest -->
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+		</div>
+		
+		<div id="Y18" class="tc1 tabcontent">
 			<p> Jan 02: <a href="https://www.vlive.tv/video/53932" target="_blank"> HAPPY 슼 YEAR </a> </p>
 			
 			<p> Jan 07: <a href="https://www.vlive.tv/video/54442" target="_blank"> "Mixtape" Release D-1 </a> </p>
@@ -433,17 +491,222 @@
 			<p> Dec 25: <a href="https://www.vlive.tv/video/106083" target="_blank"> Merry Christmas </a> </p>
 			<p> Dec 29: <a href="https://www.vlive.tv/video/106665" target="_blank"> After KBS Gayo Daechukje  </a> </p>
 			<p> Dec 30: <a href="https://www.vlive.tv/video/106760" target="_blank"> Maknae's Private Life </a> </p>
+		</div>
 		
-		
-			<!-- 2017 -->
-			
-		  <div class="secTitle" id="2017">2017</div>
+		<div id="Y17" class="tc1 tabcontent">
 			<p> Nov 20: <a href="https://www.vlive.tv/video/48982" target="_blank"> Stray Kids 1st V LIVE! Excercise your body! </a></p>
 			<p> Dec 03: <a href="https://www.vlive.tv/video/50700" target="_blank"> 2nd V LIVE♡ </a></p>
 			<p> Dec 06: <a href="https://www.vlive.tv/video/51162" target="_blank"> 3rd V LIVE </a></p>
 			<p> Dec 26: <a href="https://www.vlive.tv/video/53239" target="_blank"> Stray Kids Complete V LIVE </a></p>
+		</div>
+		
+	</div>
+		<div class="box bigBox" id="allLinks">
+			<span class="target" id="Member">&nbsp;</span>
+			<div class="secTitle" >By Member</div>
+			<div class="tab membervlive">
+				<button id="MB1" class="tb2 tablinks active" onclick="openTab(event, 'M1', 'tc2', 'tb2')">Bang Chan</button>
+				<button id="MB2" class="tb2 tablinks" onclick="openTab(event, 'M2', 'tc2', 'tb2')">Woojin</button>
+				<button id="MB3" class="tb2 tablinks" onclick="openTab(event, 'M3', 'tc2', 'tb2')">Lee Know</button>
+				<button id="MB4" class="tb2 tablinks" onclick="openTab(event, 'M4', 'tc2', 'tb2')">Changbin</button>
+				<button id="MB5" class="tb2 tablinks" onclick="openTab(event, 'M5', 'tc2', 'tb2')">Hyunjin</button>
+				<button id="MB6" class="tb2 tablinks" onclick="openTab(event, 'M6', 'tc2', 'tb2')">HAN</button>
+				<button id="MB7" class="tb2 tablinks" onclick="openTab(event, 'M7', 'tc2', 'tb2')">Felix</button>
+				<button id="MB8" class="tb2 tablinks" onclick="openTab(event, 'M8', 'tc2', 'tb2')">Seungmin</button>
+				<button id="MB9" class="tb2 tablinks" onclick="openTab(event, 'M9', 'tc2', 'tb2')">I.N</button>
 
-		</div>	  
+			</div>
+			<div id="M1" class="tc2 tabcontent" style="display:block">
+			<!-- Bang Chan -->
+			<h4>2019</h4>
+				<p> Jan 02: <a href="https://www.vlive.tv/video/107284" target="_blank"> Chan's Room </a> </p>
+				<p> Jan 10: <a href="https://www.vlive.tv/video/108499" target="_blank"> Chan's Room EP02 </a> </p>
+				<p> Jan 20: <a href="https://www.vlive.tv/video/109765" target="_blank"> Chan's Room EP03 </a> </p>
+				<p> Jan 27: <a href="https://www.vlive.tv/video/110752" target="_blank"> Chan's Room EP04: SPECIAL GUEST </a> </p>
+				<p> Jan 31: <a href="https://www.vlive.tv/video/111538" target="_blank"> Chan's Room EP05 </a> </p>
+				<p> Feb 10: <a href="https://www.vlive.tv/video/112548" target="_blank"> Chan's Room EP06 </a> </p>
+				<p> Feb 17: <a href="https://www.vlive.tv/video/113535" target="_blank"> Chan's Room EP07 </a> </p>
+				<p> Feb 25: <a href="https://www.vlive.tv/video/114609" target="_blank"> Chan's Room EP08 - SYDNEY!  </a> </p>
+				<p> Mar 03: <a href="https://www.vlive.tv/video/116017" target="_blank"> Chan's Room EP09 </a> </p>
+				<p> Mar 10: <a href="https://www.vlive.tv/video/117523" target="_blank"> Chan's Room EP10 </a> </p>
+				<p> Mar 17: <a href="https://www.vlive.tv/video/118878" target="_blank"> Chan's Room EP10.5 </a> </p>
+				<p> Mar 19: <a href="https://www.vlive.tv/video/119161" target="_blank"> Chan's Room EP11 </a> </p>
+				<p> Mar 22: <a href="https://www.vlive.tv/video/119821" target="_blank"> Chan's Room EP12: Special Guest </a> </p>
+				<p> Mar 31: <a href="https://www.vlive.tv/video/121189" target="_blank"> Chan's Room EP13 </a> </p>
+				<p> Apr 07: <a href="https://www.vlive.tv/video/122316" target="_blank"> Chan's Room EP14 - Aussie Line </a> </p>
+				<p> Apr 14: <a href="https://www.vlive.tv/video/123672" target="_blank"> Chan's Room EP15 </a> | <a href="https://www.vlive.tv/video/123676" target="_blank"> Outro! </a> </p>
+				<p> Apr 21: <a href="https://www.vlive.tv/video/124756" target="_blank"> Chan's Room EP16: Special Guest  </a> </p>
+				<p> Apr 28: <a href="https://www.vlive.tv/video/126179" target="_blank"> Chan's Room EP17 </a> </p>
+				<p> May 05: <a href="https://www.vlive.tv/video/127426" target="_blank"> Chan's Room EP18 - GERMANY! </a> </p>
+				<p> May 11: <a href="https://www.vlive.tv/video/128434" target="_blank"> Chan's Room EP19: SPECIAL GUEST! (OX) </a> </p>
+				<p> May 19: <a href="https://www.vlive.tv/video/129793" target="_blank"> Chan's Room EP20 - HOUSTON! </a> </p>
+				<p> May 27: <a href="https://www.vlive.tv/video/131256" target="_blank"> Chan's Room EP21 - LA (3RACHA) Part 1  </a> | <a href="https://www.vlive.tv/video/131273" target="_blank"> Part 2  </a> </p>
+				<p> Jun 02: <a href="https://www.vlive.tv/video/132442" target="_blank"> Chan's Room EP22 </a> </p>
+				<p> Jun 09: <a href="https://www.vlive.tv/video/133456" target="_blank"> Chan's Room EP23 </a> </p>
+				<p> Jun 15: <a href="https://www.vlive.tv/video/134626" target="_blank"> Chan's Room EP24 - SPECIAL GUEST (3RACHA) </a> </p>
+				<p> Jun 22: <a href="https://www.vlive.tv/video/135969" target="_blank"> Chan's Room EP25 </a> </p>
+				<p> Jun 30: <a href="https://www.vlive.tv/video/137328" target="_blank"> Chan's Room EP26 </a> </p>
+				<p> Jul 06: <a href="https://www.vlive.tv/video/138554" target="_blank"> Chan's Room EP27: Special Guest (Seungmin) </a> </p>
+				<p> Jul 14: <a href="https://www.vlive.tv/video/139668" target="_blank"> Chan's Room EP28 </a> </p>
+				<p> Jul 21: <a href="https://www.vlive.tv/video/140773" target="_blank"> Chan's Room EP29: SPECIAL GUEST (I.N) </a> </p>
+				<p> Jul 28: <a href="https://www.vlive.tv/video/141931" target="_blank"> Chan's Room EP30 - LONDON! </a> </p>
+				<p> Aug 03: <a href="https://www.vlive.tv/video/143072" target="_blank"> Chan's Room EP31 - MOSCOW! </a>  | <a href="https://www.vlive.tv/video/143074" target="_blank"> Ending </a> | <a href="https://www.vlive.tv/video/143075" target="_blank"> Ending 2 </a></p>
+				<p> Aug 09: <a href="https://www.vlive.tv/video/144098" target="_blank"> Chan's Room EP32 </a> </p>
+				<p> Aug 16: <a href="https://www.vlive.tv/video/145035" target="_blank"> Chan's Room EP33 </a> </p>
+				<p> Aug 25: <a href="https://www.vlive.tv/video/146321" target="_blank"> Chan's Room EP34 </a> </p>
+				<p> Aug 30: <a href="https://www.vlive.tv/video/147414" target="_blank"> Chan's Room EP35 </a> </p>
+				<p> Sep 08: <a href="https://www.vlive.tv/video/148801" target="_blank"> Chan's Room EP36 </a> </p>
+				<p> Sep 15: <a href="https://www.vlive.tv/video/149819" target="_blank"> Chan's Room EP37</a> </p>
+				<p> Sep 20: <a href="https://www.vlive.tv/video/150930" target="_blank"> Chan's Room EP38</a> </p>
+				<p> Sep 28: <a href="https://www.vlive.tv/video/152362" target="_blank"> Chan's Room EP39</a> </p>
+				<p> Oct 05: <a href="https://www.vlive.tv/video/153696" target="_blank"> Chan's Room EP40</a> </p>
+				<p> Oct 13: <a href="https://www.vlive.tv/video/154962" target="_blank"> Chan's Room EP41</a> </p>
+				<p> Oct 20: <a href="https://www.vlive.tv/video/156129" target="_blank"> Chan's Room EP42</a> </p>
+				<p> Nov 07: <a href="https://www.vlive.tv/video/159266" target="_blank"> Chan's Room EP43</a> </p>
+			</div>
+			
+			<div id="M2" class="tc2 tabcontent">
+			<!-- Woojin -->
+			<h4>2019</h4>
+				<p> Jul 31: <a href="https://www.vlive.tv/video/142532" target="_blank"> It's Woojin! </a></p>
+				<p> Aug 10: <a href="https://www.vlive.tv/video/144153" target="_blank"> Woojinie is Back </a> | <a href="https://www.vlive.tv/video/144159" target="_blank"> Part 2 </a> </p>
+				<p> Aug 31: <a href="https://www.vlive.tv/video/147498" target="_blank"> Woojin Night </a> </p>
+				<p> Sep 23: <a href="https://www.vlive.tv/video/151320" target="_blank"> Do You Like Perfume?</a> </p>
+				
+			</div>
+			
+			<div id="M3" class="tc2 tabcontent">
+			<!-- Lee Know -->
+			<h4>2019</h4>
+				<p> Aug 02: <a href="https://www.vlive.tv/video/142937" target="_blank"> Lee Know Ri Bang </a></p>
+				<p> Aug 21: <a href="https://www.vlive.tv/video/145649" target="_blank"> Lee Know Ri Bang 2 </a> </p>
+				<p> Aug 31: <a href="https://www.vlive.tv/video/147440" target="_blank"> Lee Know Ri Bang (Lunch Time) </a> </p>
+				<p> Sep 11: <a href="https://www.vlive.tv/video/149309" target="_blank"> Lee Know Ri Bang Choreography</a> </p>
+			</div>
+			
+			<div id="M4" class="tc2 tabcontent">
+			<!-- Changbin -->
+			<h4>2019</h4>
+				<p> Mar 11: <a href="https://www.vlive.tv/video/117765" target="_blank"> Please play with Binnie  </a> </p>
+				<p> Sep 02: <a href="https://www.vlive.tv/video/147694" target="_blank"> Pabbit </a> </p>
+				<p> Oct 06: <a href="https://www.vlive.tv/video/153762" target="_blank"> Pabbit (2)</a> </p>
+			</div>
+
+			<div id="M5" class="tc2 tabcontent">
+			<!-- Hyunjin -->
+			<h4>2019</h4>
+				<p> Jan 23: <a href="https://www.vlive.tv/video/110333" target="_blank"> Hyunjinie's Practice Room </a> </p>
+				<p> Feb 01: <a href="https://www.vlive.tv/video/111746" target="_blank"> Hyunjin's Practice Room#2 </a> </p>
+				<p> Mar 04: <a href="https://www.vlive.tv/video/116228" target="_blank"> Talk Time with Hyunjin </a> </p>
+				<p> Mar 28: <a href="https://www.vlive.tv/video/120834" target="_blank"> Hyunjin wants to talk with STAYs </a> </p>
+				<p> Apr 01: <a href="https://www.vlive.tv/video/121379" target="_blank"> Hyunjin's Practice Room #3 </a>
+				<p> Apr 23: <a href="https://www.vlive.tv/video/125173" target="_blank"> Do you want to talk to Hyunjin? </a> </p>
+				<p> May 18: <a href="https://www.vlive.tv/video/129700" target="_blank"> Hyunjin's Private Life ㅋㅋㅋ </a> </p>
+				<p> May 26: <a href="https://www.vlive.tv/video/131178" target="_blank"> Do you want to talk with Hyunjin?  </a> </p>
+				<p> Jun 20: <a href="https://www.vlive.tv/video/135610" target="_blank"> Hyunjin </a> </p>
+				<p> Aug 04: <a href="https://www.vlive.tv/video/143082" target="_blank">HYUN's V LIVE </a></p>
+				<p> Aug 28: <a href="https://www.vlive.tv/video/146916" target="_blank"> Hyunjin's Practice Room #4 </a> </p>
+				<p> Sep 05: <a href="https://www.vlive.tv/video/148340" target="_blank"> Have a chat with Hyunjin</a> </p>
+				<p> Sep 21: <a href="https://www.vlive.tv/video/151040" target="_blank"> Will you have dinner with Hyunjin? Part 1</a> | <a href="https://www.vlive.tv/video/151051" target="_blank"> Part 2</a> </p>
+			</div>
+			
+			<div id="M6" class="tc2 tabcontent">
+			<!-- HAN -->
+			<h4>2019</h4>
+				<p> Mar 07: <a href="https://www.vlive.tv/video/117111" target="_blank"> EosaekHAN </a> </p>
+				<p> Apr 07: <a href="https://www.vlive.tv/video/122379" target="_blank"> HAN and the Beanstalk  </a> </p>
+				<p> Jul 23: <a href="https://www.vlive.tv/video/141015" target="_blank"> (HAN's Parody) 4th Makne's Private Life Part 1 </a> | <a href="https://www.vlive.tv/video/141017" target="_blank"> Part 2 </a> </p>
+				
+			</div>
+			
+			<div id="M7" class="tc2 tabcontent">
+			<!-- Felix -->
+			<h4>2019</h4>
+				<p> Jun 11: <a href="https://www.vlive.tv/video/133916" target="_blank"> Haengbokie's ASMR </a> </p>
+			</div>
+			
+			<div id="M8" class="tc2 tabcontent">
+			<!-- Seungmin -->
+			<h4>2019</h4>
+				<p> Feb 02: <a href="https://www.vlive.tv/video/111876" target="_blank"> Seungmin's Small but Certain Happiness</a> </p>
+				<p> Feb 14: <a href="https://www.vlive.tv/video/113078" target="_blank"> Seungmin's Graduation  </a> </p>
+				<p> Sep 01: <a href="https://www.vlive.tv/video/147563" target="_blank"> Seungmin's Small but Certain Happiness 2 </a> </p>
+			</div>
+			
+			<div id="M9" class="tc2 tabcontent">
+			<!-- I.N -->
+			<h4>2018</h4>
+				<p> Dec 30: <a href="https://www.vlive.tv/video/106760" target="_blank"> Maknae's Private Life </a> </p>
+			<h4>2019</h4>
+				<p> Jan 12: <a href="https://www.vlive.tv/video/108671" target="_blank"> Maknae's Private Life 2 </a> </p>
+				<p> Jan 17: <a href="https://www.vlive.tv/video/109311" target="_blank"> Maknae's Private Life 3 (You will regret if you didn't watch this) </a> </p>
+				<p> Jan 21: <a href="https://www.vlive.tv/video/109948" target="_blank"> Maknae's Private Life 4 </a> </p>
+				<p> Feb 03: <a href="https://www.vlive.tv/video/111927" target="_blank"> Maknae's Private Life 5 (Feat. Happy New Year) </a> </p>
+				<p> Feb 07: <a href="https://www.vlive.tv/video/112299" target="_blank"> Maknae's Private Life 6 (I.N Day) </a> </p>
+				<p> Feb 28: <a href="https://www.vlive.tv/video/115739" target="_blank"> Maknae's Private Life 7 Part 1 </a> |  <a href="https://www.vlive.tv/video/115746" target="_blank"> Part 2 </a> </p>
+				<p> Mar 06: <a href="https://www.vlive.tv/video/116728" target="_blank"> Maknae's Private Life 8 (Felix OK) </a> </p>
+				<p> Mar 14: <a href="https://www.vlive.tv/video/118506" target="_blank"> Maknae's Private Life 9 (feat. White Day)</a> </p>
+				<p> Apr 10: <a href="https://www.vlive.tv/video/122973" target="_blank"> Maknae's Private Life 10 (feat. Daengdaengie) </a> </p>
+				<p> May 17: <a href="https://www.vlive.tv/video/129444" target="_blank"> Maknae's Private Life 11 </a> </p>
+				<p> May 27: <a href="https://www.vlive.tv/video/131355" target="_blank"> Maknae's Private Life 12 </a> </p>
+				<p> Jun 24: <a href="https://www.vlive.tv/video/136169" target="_blank"> Maknae's Private Life 13 (feat. Woojin) </a> </p>
+				<p> Jul 10: <a href="https://www.vlive.tv/video/139102" target="_blank"> Maknae's Private Life 14 </a> </p>
+				<p> Aug 05: <a href="https://www.vlive.tv/video/143225" target="_blank"> Maknae's Private Life 15 </a> </p>
+				<p> Aug 23: <a href="https://www.vlive.tv/video/146143" target="_blank"> Maknae's Private Life 16 </a> </p>
+				<p> Sep 09: <a href="https://www.vlive.tv/video/148819" target="_blank"> Maknae's Private Life 17 On My Way to School~~ </a> </p>
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<span class="target" id="Series">&nbsp;</span>
+			<div class="secTitle" >By Series Title</div>
+			<div class="tab">
+				<button id="MB10" class="tb3 tablinks active" onclick="openTab(event, 'M10', 'tc3', 'tb3')">Sunday Kids</button>
+				<button id="MB11" class="tb3 tablinks" onclick="openTab(event, 'M11', 'tc3', 'tb3')">DaengNyang School</button>
+			</div>
+			
+			<div id="M10" class="tc3 tabcontent" style="display:block">
+			<!-- Sunday Kids -->
+			<h4>2018</h4>
+				<p> Oct 28: <a href="https://www.vlive.tv/video/95978" target="_blank">HAPPY HALLOWEEN </a> </p>
+				<p> Nov 11: <a href="https://www.vlive.tv/video/98488" target="_blank">Pepero Day </a> </p>
+				<p> Nov 18: <a href="https://www.vlive.tv/video/99672" target="_blank">Fragrance Day </a> </p>
+				<p> Nov 25: <a href="https://www.vlive.tv/video/100825" target="_blank">3RACHA has come </a> </p>
+				<p> Dec 02: <a href="https://www.vlive.tv/video/101939" target="_blank">Salon Day Part 1</a> | <a href="https://www.vlive.tv/video/101940" target="_blank"> Part 2</a> </p>
+				
+			<h4>2019</h4>
+				<p> Mar 31: <a href="https://www.vlive.tv/video/121179" target="_blank">TMI </a> </p>
+				<p> Apr 21: <a href="https://www.vlive.tv/video/124772" target="_blank">Board Game Day </a> </p>
+				<p> Jun 23: <a href="https://www.vlive.tv/video/136037" target="_blank">Jump rope in the moonlight </a> </p>
+				<p> Jun 30: <a href="https://www.vlive.tv/video/137306" target="_blank">Han River Outing </a> </p>
+				<p> Jul 07: <a href="https://www.vlive.tv/video/138594" target="_blank">Hyung Line  </a> </p>
+				
+			</div>
+			
+			<div id="M11" class="tc3 tabcontent">
+			<!-- Dog and Cat -->
+			<h4>2019</h4>
+				<p> Jan 03: <a href="https://www.vlive.tv/video/107334" target="_blank"> Dog and Cat School </a> </p>
+				<p> Jan 16: <a href="https://www.vlive.tv/video/109225" target="_blank"> Dog and Cat School 2 </a> </p>
+				<p> Jan 22: <a href="https://www.vlive.tv/video/110076" target="_blank"> Dog and Cat School 3 </a> </p>
+				<p> Jun 14: <a href="https://www.vlive.tv/video/134531" target="_blank"> Dog and Cat School 4! </a> </p>
+			</div>
+		
+		
+		
+	
+		</div>
+		
+		
+	  
 	</div>
 <!-- END OF LINKS SECTION -->
 
