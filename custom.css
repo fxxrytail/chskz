@@ -160,7 +160,7 @@ h5 { text-align:center; }
 	margin: 0;
 	width:100%;
 }
-#open button:hover {color: #fb331a; background-color: #0e0e0c}
+#open button:hover {color: #fb331a; background-color: #0e0e0c; font-weight:bold}
 #open button:active {color: #2F9FB7; background-color: #0e0e0c; font-weight:bold}
 
 .modalBox {
