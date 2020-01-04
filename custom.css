@@ -32,6 +32,15 @@ h5 { text-align:center; }
 
 #wait {color:#808080;}
 
+.label {
+	font-size:12px;
+	font-weight:bold; 
+	padding:5px; 
+	margin-top: 5px;
+	border: 1px solid #ffffff;
+}
+.subSec {margin: 10px 0;}
+
 .sticky { position:sticky; top:0;}
 .sticky1 { position:sticky; top:35px;}
 
