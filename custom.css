@@ -101,6 +101,7 @@ h5 { text-align:center; }
   height:100vh;
   background-color:#0e0e0c;
   position:absolute;
+  top:0;
   margin:0;
   text-align: left;
   overflow: auto;
@@ -183,7 +184,7 @@ h5 { text-align:center; }
 }
 
 .close {
-  color: #2F9FB7;
+  color: #ffffff;
   float: right;
   font-size: 28px;
   font-weight: bold;
