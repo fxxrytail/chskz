@@ -336,6 +336,9 @@ width: 100%;
 height: 100%;
 }
 
+/*Support Page*/
+.enlarge{width:70%;}
+
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 500px) {
@@ -348,6 +351,7 @@ height: 100%;
 	#menuColor, #showMobile {display:block;}
 	.menuList {max-width:60%;}
 	.sticky1 {position:static;}
+	.enlarge{width:100%;}
 }
 @media only screen and (max-height: 500px) {
 	#modalBG, #menuContent, {display:none;}
