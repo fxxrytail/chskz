@@ -39,6 +39,7 @@ h5 { text-align:center; }
 	margin-top: 5px;
 	border: 1px solid #ffffff;
 }
+.yr {text-align:center}
 .subSec {margin: 10px 0;}
 
 .sticky { position:sticky; top:0; z-index:1;}
