@@ -356,7 +356,7 @@ height: 100%;
 }
 @media only screen and (max-height: 500px) {
 	#modalBG, #menuContent, {display:none;}
-	.modalBox{width:95%; max-height:500px} 
+	.modalBox{width:80%; max-height:500px} 
 	#menuColor, #showMobile {display:block;}
 	.menuList {max-width:60%;}
 	.sticky1 {position:static;}
