@@ -18,12 +18,12 @@ function topFunction() {
 
 function openMenu() {
 	menuStat = document.getElementById("menuContent").style.display;
-	
+
 	if (menuStat != "block"){
 		document.getElementById("menuContent").style.display = "block";
 		document.getElementById("modalBG").style.display = "block";
 	}
-	
+
 	else {
 		document.getElementById("menuContent").style.display = "none";
 		document.getElementById("modalBG").style.display = "none";
@@ -35,10 +35,22 @@ function closeMenu() {
   document.getElementById("modalBG").style.display = "none";
 }
 
-// When the user clicks the button, open the modal 
+/*For facts
+function openBox(boxBtn, boxBox) {
+  var vboxBtn, vboxBox, vboxSpan;
+  vboxBtn = document.getElementById(boxBtn);
+  vboxBox = document.getElementById(boxBox);
+}*/
+
+function closeBox() {
+  document.getElementById("menuContent").style.display = "none";
+  document.getElementById("modalBG").style.display = "none";
+}
+
+// When the user clicks the button, open the modal
 function openModal() {
   document.getElementById("modalBoxBG").style.display = "block";
-  
+
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -46,30 +58,47 @@ function closeModal() {
   document.getElementById("modalBoxBG").style.display = "none";
 }
 
-function openAbout(){
+function openNav(){
+  navBtnv = document.getElementById("navBox").style.innerHTML;
+
+  if (navBtnv != "Collapse Navigation"){
+  document.getElementById("navBox").style.display = "block";
+  document.getElementById("navBox").style.innerHTML = "Collapse Navigation";
+  }
+
+  else {
+    document.getElementById("navBox").style.display = "none";
+    document.getElementById("navBox").style.innerHTML = "Navigation";
+  }
+}
+
+/*  if (menuStat != "block"){
+		document.getElementById("menuContent").style.display = "block";
+		document.getElementById("modalBG").style.display = "block";
+	}
+
 	btnAboutText = document.getElementById("myBtn").innerHTML;
-	
+
 	if (btnAboutText != "Click to hide About"){
 		document.getElementById("about").style.display = "block";
 		document.getElementById("myBtn").innerHTML = "Click to hide About";
 	}
-	
+
 	else {
 		document.getElementById("about").style.display = "none";
 		document.getElementById("myBtn").innerHTML = "About This Site and Contact";
-	}
-}
+	} */
 
 /*function openSurvey() {
 	btnSurveyText = document.getElementById("btnSurvey").innerHTML;
-	
+
 	if (btnSurveyText != "Click to hide"){
 		document.getElementById("about").style.display = "none";
 		document.getElementById("survey").style.display = "block";
 		document.getElementById("box").style.border = "2px solid #607d8b";
 		btnSurveyText = document.getElementById("btnSurvey").innerHTML = "Click to hide";
 	}
-	
+
 	else {
 		document.getElementById("about").style.display = "block";
 		document.getElementById("survey").style.display = "none";
@@ -99,9 +128,9 @@ function openTabb(evt, tabName, tc, tb, ct) {
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(tabName).style.display = "block";
   click = document.getElementById(ct);
-  click.className += " active"; 
-  
-  
+  click.className += " active";
+
+
 }
 
 /*ORIGINAL TAB FUNCTION*/
