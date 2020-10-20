@@ -61,14 +61,14 @@ function closeModal() {
 function openNav(){
   navBtnv = document.getElementById("navBox").style.innerHTML;
 
-  if (navBtnv != "Collapse Navigation"){
-  document.getElementById("navBox").style.display = "block";
-  document.getElementById("navBox").style.innerHTML = "Collapse Navigation";
+  if (navBtnv != "Navigation"){
+  document.getElementById("navBox").style.display = "none";
+  document.getElementById("navBox").style.innerHTML = "Navigation";
   }
 
   else {
-    document.getElementById("navBox").style.display = "none";
-    document.getElementById("navBox").style.innerHTML = "Navigation";
+    document.getElementById("navBox").style.display = "block";
+    document.getElementById("navBox").style.innerHTML = "Collapse Navigation";
   }
 }
 
