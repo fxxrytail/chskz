@@ -63,7 +63,7 @@
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
   <script type='text/javascript'>
-    var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1bfLhQDTHaGBoP4GbmIlM7Gunp4rHRsQxPvM3L4BkSvw/edit?usp=sharing';
+    var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1clakCW5TxaIAEhr7qujT5x3j3Sf7uGRiL-a4zjou4-I/edit?usp=sharing';
 
     function init() {
       Tabletop.init( { key: publicSpreadsheetUrl,
@@ -76,7 +76,15 @@
             for(var i=0;i<data.length; i++){
               $('.postlist').append('
 
-                  <p>'+ data[i].date +': <a href="'+ data[i].link +'" target="_blank"> '+ data[i].title +'</a> </p>
+                  <div class="col-md-4"><h4 style="text-align:center;">' + data[i].name+'</h4>
+                  <img class="img-thumbnail rounded mx-auto d-block" style="height:200px;" alt="'+data[i].name+'" src="'+data[i].imagesrc+'"</img>
+                  <p style="text-align: justify; text-justify: inter-word;">' + data[i].summary + '</p>
+                  <p><b>Status:</b> '+ data[i].status + '</p>
+                  <p><b>Built Date: </b> '+ data[i].builtdate + '</p>
+                  <p><b>Destroyed Date: </b> '+ data[i].destroyeddate + '</p>
+                  <p><b>Destroyed by: </b> '+ data[i].destroyedby + '</p>
+                  <p><a class="btn btn-outline-info" target="_blank" href="'+data[i].details_link+'">View details</a></p></div>');
+
 
                 if (counter == 3){
 
