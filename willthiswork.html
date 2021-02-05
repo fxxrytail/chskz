@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="A compilation of Stray Kids music videos, performances, shows and guestings">
+	<meta name="keyword" content="stray kids, shows, masterlist">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SUPPORT SKZ - CHANNEL SKZ</title>
+  <link rel="shortcut icon" href="icon.png" />
+
+  <link rel="stylesheet" href="custom.css"/>
+  <script src="javascript.js"></script>
+
+</head>
+
+<body>
+<!--counter-->
+<div align=center style="display:none"><a href='https://www.counter12.com'><img src='https://www.counter12.com/img-6y1a753ZC5ZWDZw1-15.gif' border='0' alt='conter12'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=6y1a753ZC5ZWDZw1'></script></div>
+<!--/counter-->
+
+<div id="modalBG" class="modal" onclick="closeMenu()"></div>
+<button onclick="topFunction()" id="btnTop" title="Go to top">Top</button>
+<div class="sticky">
+   <div class="btn-container">
+		<button class="btnMenu" id="menuColor" onclick="openMenu()">Menu</button>
+		<a href="index.html"><button>Home</button></a>
+		<a href="straykids.html"><button title="Music Videos, Dance Practices and etc.">Stray Kids</button></a>
+		<a href="shows.html"><button>Shows</button></a>
+		<a href="vlives.html"><button>V Lives</button></a>
+		<span class="morepage">
+			<a href="spotkids.html"><button>Spot Kids</button></a>
+		</span>
+
+		<!-- Drop Down Menu -->
+		<div class="menuList" id="menuContent" onclick="closeMenu()">
+			<h4 style="float:right;">&times;</h4>
+			<span class="morepage-menu" id="page">
+				<h4>More Pages</h4>
+				<a href="spotkids.html"><button>Spot Kids</button></a>
+				<a href="welcome.html"><button>For New STAY</button></a>
+				<a href="support.html"><button>Support SKZ</button></a>
+				<a href="etc.html"><button>ETC</button></a>
+			</span>
+		</div>
+	</div>
+</div>
+
+  <div class="main">
+    <div class="section group">
+<!-- LINKS SECTION HERE -->
+	<div class="col span_3_of_3">
+
+
+		<div class="box bigBox postlist" id="allLinks">
+
+
+
+		</div>
+
+	</div>
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+  <script type='text/javascript'>
+    var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1bfLhQDTHaGBoP4GbmIlM7Gunp4rHRsQxPvM3L4BkSvw/edit?usp=sharing';
+
+    function init() {
+      Tabletop.init( { key: publicSpreadsheetUrl,
+                       callback: showInfo,
+                       simpleSheet: true } )
+    }
+    var counter = 1;
+    function showInfo(data, tabletop) {
+
+            for(var i=0;i<data.length; i++){
+              $('.postlist').append('
+
+                  <p>'+ data[i].date +': <a href="'+ data[i].link +'" target="_blank"> '+ data[i].title +'</a> </p>
+
+                if (counter == 3){
+
+                }
+            }
+
+      //alert('Successfully processed!')
+      console.log(data);
+    }
+
+    window.addEventListener('DOMContentLoaded', init)
+  </script>
+
+</body>
+</html>
