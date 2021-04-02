@@ -269,6 +269,8 @@ h5 { text-align:center; }
 .span_2_of_3 { width: 66.33%; }
 .span_1_of_3 { width: 32.66%; }
 
+.half-screen { width: 50%; }
+.full-screen { max-width: 1080px; }
 
 /* Style the tab */
 .tab {
@@ -344,7 +346,7 @@ height: 100%;
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 500px) {
 	.col {  margin: 1% 0 1% 0%; }
-	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3, .half-screen { width: 100%; }
 	.morepage {display:none;}
 	.morepage-menu {display:block;}
 	#modalBG, #menuContent, {display:none;}
